@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{ARE_DES}</title>
+    <fields>
+        
+        <field name="ARE_FECHA" alias="Fecha ARE" visible="true"/>
+        <field name="ARE_DES" alias="Descripcion ARE"/>
+        <field name="ARE_MEM_TEC" alias="Memoria Tecnica ARE" visible="true"/>
+        <field name="ARE_OBSR" alias="Observaciones ARE" visible="true"/>
+        <field name="ARE_SIMB" alias="Simbolo ARE" visible="true"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

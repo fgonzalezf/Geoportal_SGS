@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<configuration>
+    <width>0</width>
+    <height>0</height>
+    <content><![CDATA[
+             <p align='center'>
+                     	 <br/>
+                         <br/>
+                         <img src='assets/images/SGC.png'/>
+                         <br/>
+                         <br/>
+                         <br/>
+                         <br/>
+                         <font size="+2"><h><b>Servicio Geológico Colombiano</b></h></font>
+                         <br/>
+                         
+                         <font size="+2"><h><b>Visor Geógrafico Geoportal</b></h></font>
+                         <br/>
+                         <br/>
+                         <br/>
+                         <font size="+2"><b><a href="http://srvags.sgc.gov.co/flexviewer/Geomorfodinamica/Guias/Derechos_Autor.pdf" target='_blank'>Privacidad y Terminos de Uso</a></b></font>
+                     </p> 
+]]></content>
+    <labels>
+        <btnlabel>Aceptar</btnlabel>
+    </labels>
+    <labels>
+        <btnlabel>Declinar</btnlabel>
+    </labels>
+</configuration>

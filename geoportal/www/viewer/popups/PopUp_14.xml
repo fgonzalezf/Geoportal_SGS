@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{PMG_NOMB}</title>
+    <fields>
+        
+        <field name="PMG_NOMB" alias="Nombre PMG"/>
+        <field name="PMG_FECHA" alias="Fecha PMG"/>
+        <field name="PMG_HORA" alias="Hora Inicial PMG"/>
+        <field name="PMG_ALT" alias="Altitud o Elevacion PMG" visible="true"/>
+        <field name="PMG_LAT" alias="Latitud PMG" visible="true"/>
+        <field name="PMG_LONG" alias="Longitud PMG" visible="true"/>
+        <field name="PMG_EQP_MED" alias="Equipo de Medicion PMG"/>
+        <field name="PST_PREC_ALT" alias="Precision Altura PMG" visible="true"/>
+        <field name="PST_FTE" alias="Fuente de Informacion PMG" visible="true"/>
+        <field name="PST_CALD_DATO" alias="Calidad del dato PMG"/>
+        <field name="PMG_VALD" alias="Validacion"/>
+        <field name="PST_TIPO_OBSERV" alias="Tipo de Medicion"/>
+        <field name="PMG_VALOR_IGRF" alias="Valor IGRF"/>
+        <field name="PMG_ANOMALIA_MAG" alias="Anomalia"/>
+        
+        <field name="PMG_SIMB" alias="Simbolo PMG"/>
+       
+        <field name="PMG_PREC_POS" alias="Precision posicion PMG" visible="true"/>
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

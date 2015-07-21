@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>Visor de Datos Geográficos</title>
+    <subtitle></subtitle>
+    <logo>assets/images/Logo.png</logo>
+    <style>
+        <colors>0x0,0xcccccc,0x555555,0x333333,0xFFFFFF</colors>
+			<alpha>0.8</alpha>
+			<font name="Calibri"/>
+			<titlefont name="Calibri"/>
+			<subtitlefont name="Arial"/>
+    </style>
+    <!-- replace the following url with your own geometryservice -->
+    <geometryservice url="https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer"/>
+    <!-- UI elements -->
+    <!--<widget right="20" top="55" config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>-->
+    <!-- widgets organized into widget containers that manage close/open etc -->
+    <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
+    <widget url="widgets/Navigation/NavigationWidget.swf" config="widgets/Navigation/NavigationWidget.xml" left="10" top="50"/>
+    <widget url="widgets/Coordinate/CoordinateWidget.swf" config="widgets/Coordinate/CoordinateWidget.xml" label="Coordenada" left="3" bottom="1"/>
+    <widget url="widgets/OverviewMap/OverviewMapWidget.swf" config="widgets/OverviewMap/OverviewMapWidget.xml" right="0" bottom="0"/>
+    <widget url="widgets/HeaderController/HeaderControllerWidget.swf" config="widgets/HeaderController/HeaderControllerWidget.xml" left="0" top="0"/>
+    <!--
+    <widget url="widgets/StaticImage/StaticImageWidget.swf" config="widgets/StaticImage/StaticImageWidget.xml" label="Imagen est�tica" left="5" bottom="62"/>
+    -->
+    <widget url="widgets/Splash/SplashWidget.swf" config="widgets/Splash/SplashWidget.xml" label="Presentación"/>
+    <widget url="widgets/MapSwitcher/MapSwitcherWidget.swf" config="widgets/MapSwitcher/MapSwitcherWidget.xml" label="Gestor de mapas" right="20" top="55"/>
+    <widget url="widgets/OverviewMap/OverviewMapWidget.swf" config="widgets/OverviewMap/OverviewMapWidget.xml" label="Mapa de vista general" right="0" bottom="0"/>
+    <map attributionvisible="true" esrilogovisible="false" openhandcursorvisible="false" scalebarvisible="true" scalebar="metric" zoomslidervisible="false" wraparound180="true" addarcgisbasemaps="false" initialextent="-10173000 -623000 -5477000 1444000" fullextent="-10173000 -623000 -5477000 1444000" top="40" portalurl="https://www.arcgis.com/">
+        <basemaps>
+            <layer type="tiled" label="Imágenes Satelitales" icon="https://www.arcgis.com/sharing/rest/content/items/3027a41ed46d4a9b915590d14fecafc0/info/thumbnail/imagery_labels.jpg" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="true"/>
+            <layer type="tiled" label="Imágenes Satelitales" url="http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer" visible="false" reference="true"/>
+            <layer type="tiled" label="Calles" icon="https://www.arcgis.com/sharing/rest/content/items/04e903465a3e497aa669212e08927cee/info/thumbnail/world_street_map.jpg" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" visible="false"/>
+            <layer type="osm" label="OpenStreetMap" icon="https://www.arcgis.com/sharing/rest/content/items/d415dff75dd042258ceda46f7252ad70/info/thumbnail/temposm.jpg" visible="false"/> 
+            <layer type="dynamic" icon="assets/images/MapaSombras.png" label="Mapa Sombras Colombia Estandar" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Sombras_Colombia/Mapa_Sombras_Colombia_Estandar/MapServer" visible="false">
+                <sublayer id="1" popupconfig="popups/PopUp_20.xml"/>
+                <sublayer id="4" popupconfig="popups/PopUp_21.xml"/>
+            </layer>
+            
+        </basemaps>
+        <operationallayers>
+        	
+        	<layer type="dynamic" label="Zonas Exploración Criterio Hidrogeológico" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/PEXAS/PEXAS_Zonas_Exploracion_Critero_Hidrogeologico/MapServer" visible="false">
+                
+            </layer>
+            <layer type="dynamic" label="Zonas Exploración Criterio Demanda" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/PEXAS/PEXAS_Zonas_Explotacion_Criterio_Demanda/MapServer" visible="false">
+                
+            </layer>
+             	
+            <layer type="feature" label="Estaciones GNSS SGC 2014" url="http://srvags.sgc.gov.co/arcgis/rest/services/Estaciones_GNSS/Estaciones_GNSS_SGC_2014/MapServer/0" popupconfig="popups/PopUp_20.xml" mode="onDemand" visible="false"/>
+            <!--          	
+            <layer type="dynamic" label="Zona Potencial Integral" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Zonas_Potencial_Integral/Zona_Potencial_Integral/MapServer" visible="false">
+                <sublayer id="0" popupconfig="popups/PopUp_19.xml"/>
+            </layer>
+            -->
+            <layer type="dynamic" label="Geomorfodinámica" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Geomorfodinamica/Geomorfodinamica/MapServer" visible="false">
+                <sublayer id="2" popupconfig="popups/PopUp_12.xml"/>
+                <sublayer id="9" popupconfig="popups/PopUp_13.xml"/>
+            </layer>
+            <!--
+            <layer type="dynamic" label="Geof�sica" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Geofisica/geofisica/MapServer" visible="false">
+                <sublayer id="0" popupconfig="popups/PopUp_14.xml"/>
+                <sublayer id="1" popupconfig="popups/PopUp_15.xml"/>
+                <sublayer id="2" popupconfig="popups/PopUp_16.xml"/>
+                <sublayer id="4" popupconfig="popups/PopUp_17.xml"/>
+                <sublayer id="12" popupconfig="popups/PopUp_18.xml"/>
+            </layer>
+            -->
+            <layer type="dynamic" label="Mapa Geológico Colombia" alpha="0.5" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Geologico_Colombia/Mapa_Geologico_Colombia/MapServer" visible="true">
+             <sublayer id="24" popupconfig="popups/PopUp_22.xml"/>
+             
+             </layer>
+            <layer type="dynamic" label="Mapa de Amenaza por Movimientos  en Masa" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Amenaza_MM/Mapa_Amenaza_MM/MapServer" visible="false">
+                <sublayer id="4" popupconfig="popups/PopUp_11.xml"/>
+            </layer>
+            <layer type="dynamic" label="Mapa Potencial Carbonífero Colombia" alpha="0.51" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer" visible="false">
+                <sublayer id="0" popupconfig="popups/PopUp_8.xml"/>
+                <sublayer id="1" popupconfig="popups/PopUp_9.xml"/>
+                <sublayer id="3" popupconfig="popups/PopUp_10.xml"/>
+            </layer>
+            <layer type="feature" label="Estado de la Cartografía" alpha="0.3" url="http://srvags.sgc.gov.co/arcgis/rest/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/0" popupconfig="popups/PopUp_21.xml" mode="onDemand" visible="false"/>
+            <layer type="feature" label="Amenaza Sísmica" alpha="0.5" url="http://srvags.sgc.gov.co/arcgis/rest/services/Amenaza_Sismica/Amenaza_Sismica_Nacional/MapServer/0" popupconfig="popups/PopUp_7.xml" mode="onDemand" visible="false">
+             <simplerenderer>
+                  <simplemarkersymbol style="circle" color="0xF7FE2E" alpha="1" size="10">
+                      <outline width="2" color="0x000000"   />
+                     </simplemarkersymbol>
+                  </simplerenderer>
+            </layer>
+             <!--
+            <layer type="dynamic" label="Anomalia Geoquimica" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Anomalia_Geoquimica/Anomalia_Geoquimica/MapServer" visible="false">
+                <sublayer id="0" popupconfig="popups/PopUp_5.xml"/>
+                <sublayer id="1" popupconfig="popups/PopUp_6.xml"/>
+            </layer>
+            -->
+            <layer type="dynamic" label="Atlas Geológico de Colombia" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Atlas_Geologico_Colombiano/Atlas_Geologico_Colombia/MapServer" visible="false">
+                <sublayer id="8" popupconfig="popups/PopUp_1.xml"/>
+                <sublayer id="9" popupconfig="popups/PopUp_2.xml"/>
+                <sublayer id="10" popupconfig="popups/PopUp_3.xml"/>
+                <sublayer id="11" popupconfig="popups/PopUp_4.xml"/>
+            </layer>
+            
+            <layer type="dynamic" label="Metadato Geográfico" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/METG/METADATO/MapServer" visible="false">
+            </layer>
+            <layer type="dynamic" label="Inventrio Muestras Litoteca" alpha="0.5" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Inventario_Muestra_Litoteca/Mapa_Inventario_Muestra_Litoteca/MapServer" visible="false">
+            </layer>
+        </operationallayers>
+    </map>
+    
+    	<!-- 
+        <widget url="widgets/AttributeTable/AttributeTableWidget.swf" config="widgets/AttributeTable/AttributeTableWidget.xml" label="Tabla de Atributos" icon="assets/images/TableOpen32.png"/>
+        <widget url="widgets/LayerList/LayerListWidget.swf" config="widgets/LayerList/LayerListWidget.xml" label="Lista de Layers" icon="assets/images/i_layers.png"/>
+        -->
+        
+ <widgetcontainer layout="float" botton="400">      
+        <widget label="Cargar Shapefiles"     		
+				icon="widgets/ShapeFiles/assets/images/shapefiles.png"
+				config="widgets/ShapeFiles/ShapeFilesWidget.xml"
+				url="widgets/ShapeFiles/ShapeFilesWidget.swf"/>
+        <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="Imprimir" icon="assets/images/i_print.png"/>
+        <widget url="widgets/FindData/FindDataWidget.swf" config="widgets/FindData/FindDataWidget.xml" label="Búsqueda En Geoportal" icon="assets/images/i_search.png" left="100" top="50" preload="minimized" width="450"/>
+        <widget url="widgets/Bookmark/BookmarkWidget.swf" config="widgets/Bookmark/BookmarkWidget_1.xml" label="Marcadores" icon="assets/images/i_bookmark.png"/>
+        <widget url="widgets/Search/SearchWidget.swf" config="widgets/Search/SearchWidget_3.xml" label="Buscar" icon="assets/images/idisk_globe.png"/>
+         <widget label="Perfil de Elevación" top="350" bottom="20" icon="widgets/ElevationProfile/images/i_epwidget.png" url="widgets/ElevationProfile/ElevationProfileWidget.swf" config="widgets/ElevationProfile/ElevationProfileWidget.xml"/>
+         <widget label="Cargar Servicio" icon="assets/images/globe.png" config="widgets/LoadService/LoadService.xml" url="widgets/LoadService/LoadService.swf"/>
+                
+                
+    </widgetcontainer>
+    <widgetcontainer paneltype="bottom" initialstate="collapsed">
+        <widget url="widgets/AttributeTable/AttributeTableWidget.swf" config="widgets/AttributeTable/AttributeTableWidget.xml" label="Tabla de atributos" icon="assets/images/TableOpen32.png"/>
+    </widgetcontainer>
+    <widgetcontainer paneltype="left" initialstate="open">
+        <widget label="Lista De Capas"
+                icon="assets/images/i_layers.png"
+                config="widgets/LayerList/LayerListWidget.xml"
+                url="widgets/LayerList/LayerListWidget.swf"/>
+    </widgetcontainer>
+</configuration>

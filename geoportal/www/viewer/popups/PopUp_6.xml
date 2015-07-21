@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{ULG_NOMBRE}</title>
+    <fields>
+       
+        <field name="ULG_NOMBRE" alias="Nombre"/>
+        <field name="ULG_TERRENO" alias="Unidad Terreno" visible="true"/>
+        <field name="ULG_SIMBOLO" alias="Símbolo" visible="true"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

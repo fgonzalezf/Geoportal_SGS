@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{PGV_NOMB}</title>
+    <fields>
+        
+        <field name="PGV_NOMB" alias="Nombre del punto PGV" visible="true"/>
+        <field name="PGV_FECHA" alias="Fecha PGV" visible="true"/>
+        <field name="PGV_HORA" alias="Hora PGV" visible="true"/>
+        <field name="PGV_ALT" alias="Altitud elevacion PGV" visible="true"/>
+        <field name="PGV_LONG" alias="Logitud PGV" visible="true"/>
+        <field name="PGV_LAT" alias="Latitud PGV" visible="true"/>
+        <field name="PST_PREC_POS" alias="Precision de la posicion PGV" visible="true"/>
+        <field name="PGV_EQP_MED" alias="Equipo de medicion PGV" visible="true"/>
+        <field name="PST_CALD_DATO" alias="Calidad dato PGV" visible="true"/>
+        <field name="PST_FTE" alias="Fuente informacion PGV"/>
+        <field name="PST_TIPO_OBSERV" alias="Tipo de medicion PGV"/>
+        <field name="PGV_VAL" alias="Validacion PGV"/>
+        <field name="PGV_OBSR" alias="Observaciones PGV"/>
+        <field name="PGV_SIMB" alias="Simbolo PGV"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

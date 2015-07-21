@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{MGUCR_SIMBL}</title>
+    <fields>
+        
+        <field name="MGUCR_SIMBL" alias="Símbolo" visible="true"/>
+        <field name="MGCUCR_DESCR" alias="Descripción" visible="true"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

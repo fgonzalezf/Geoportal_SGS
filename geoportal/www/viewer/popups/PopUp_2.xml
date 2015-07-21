@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{NFG_CODG_NOMB}</title>
+    <fields>
+       
+        <field name="APST_TIPO_FALLA" alias="Tipo_Falla" visible="true"/>
+        <field name="APST_ACTV_FALLA" alias="Actividad Falla" visible="true"/>
+  
+        <field name="NFG_CODG_NOMB" alias="Nombre_Falla"/>
+       
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

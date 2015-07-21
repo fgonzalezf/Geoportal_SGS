@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<configuration>
+    <layer>http://srvags.sgc.gov.co/arcgis/rest/services/Geomorfodinamica/Geomorfodinamica/MapServer/1</layer>
+    <query/>
+    <titlefield>PGMD_COD</titlefield>
+    <linkfield2 alias2="PDF" emptyalias2="El PDF NO ESTA">PGMD_URL</linkfield2>
+    <linkfield alias="Video" emptyalias="Video No Disponible">PGMD_VID</linkfield>
+    <zoomscale>5000</zoomscale>
+    <shareresults>true</shareresults>
+    <orderbyfields>OBJECTID_1 ASC</orderbyfields>
+    <fields all="false">
+        <field name="OBJECTID_1" alias="Hola"/>
+        <field name="PGMD_COD" alias="PGMD_COD"/>
+        <field name="PGMD_COOX" alias="Hola2"/>
+        <field name="PGMD_COOY" alias="PGMD_COOY"/>
+        <field name="PGMD_FECH" alias="Hola6"/>
+        <field name="PGMD_CLIM" alias="PGMD_CLIM"/>
+        <field name="PGMD_PEND" alias="PGMD_PEND"/>
+        <field name="PGMD_DPT" alias="PGMD_DPT"/>
+        <field name="PGMD_DLC" alias="PGMD_DLC"/>
+        <field name="PGMD_DOL" alias="PGMD_DOL"/>
+        <field name="PGMD_DDL" alias="PGMD_DDL"/>
+        <field name="PGMD_DVI" alias="PGMD_DVI"/>
+        <field name="PGMD_POLA" alias="PGMD_POLA"/>
+        <field name="PGMD_LOLA" alias="PGMD_LOLA"/>
+        <field name="PGMD_TROM" alias="PGMD_TROM"/>
+        <field name="PGMD_URL" alias="PGMD_URL"/>
+        <field name="PGMD_VID" alias="PGMD_VID"/>
+        <field name="PGMD_COMEN" alias="PGMD_COMEN"/>
+        <field name="LAT_DEC" alias="LAT_DEC"/>
+        <field name="LONG_DEC" alias="LONG_DEC"/>
+    </fields>
+</configuration>

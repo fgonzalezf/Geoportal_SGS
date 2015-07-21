@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<configuration>
+	<defaultlabelplacement>middle</defaultlabelplacement>
+	<autozoom>true</autozoom>
+	<symbols>
+		<simplefillsymbol color="0x4dfe45" alpha="0.6" style="solid">
+			<outline color="0x088802" alpha="0.8" width="1" style="solid"/>
+		</simplefillsymbol>
+		<simplemarkersymbol style="circle" size="15" color="0x4dfe45" alpha="0.6" angle="0">
+			<outline color="0x088802" alpha="0.8" width="1" style="solid"/>
+		</simplemarkersymbol>
+		<simplelinesymbol color="0x088802" alpha="0.8" width="2" style="solid"/>
+		<TextSymbol color="0x000000" size="12" bold="false" italics="false" underline="false" font="Verdana"/>
+	</symbols>
+	<labels>
+		<textplacementmiddle>Medio</textplacementmiddle>
+		<textplacementabove>Arriba</textplacementabove>
+		<textplacementbelow>Abajo</textplacementbelow>
+		<textplacementend>Final</textplacementend>
+		<textplacementstart>Comienzo</textplacementstart>
+		<textboldlabel>B</textboldlabel>
+		<textboldtooltip>Negrilla</textboldtooltip>
+		<textitaliclabel>I</textitaliclabel>
+		<textitalictooltip>Cursiva</textitalictooltip>
+		<textunderlinelabel>U</textunderlinelabel>
+		<textunderlinetooltip>Subrayado</textunderlinetooltip>
+		<instructions>Para cargar un ShapeFile el archivo debe estar comprimido en un archivo Zip.&#13;&#13;Como mínimo debe haber 2 archivos contenidos en el archivo zip con las siguientes extensiones, 1 .shp, 1 .dbf, y un archivo .prj opcional.&#13;&#13;Haga clic en el botón que esta en la parte de abajo para cargar un archivo alojado en su equipo.&#13;&#13;Para cambiar la simbología y otras preferencias, haga clic en el icono de llave inglesa que aparce en la parte de arriba de esta ventana.</instructions>
+		<loadbutton>Cargar Shapefile Local...</loadbutton>
+		<addbutton>Cargar Shapefile</addbutton>
+		<optionsbutton>Preferencias</optionsbutton>
+		<readingmessage>Leyendo shapefile</readingmessage>
+		<reprojectingmessage>Reproyectando</reprojectingmessage>
+		<numberoffeaturesmessage>Número de Registros:</numberoffeaturesmessage>
+		<addedmessage>Adicionar Shapefiles:</addedmessage>
+		<addlabels>Etiqueta de registros</addlabels>
+        <fieldlabel>Etiqueta campos</fieldlabel>
+		<labelplacement>Colocación de la etiqueta</labelplacement>
+		<includeoutline>Incluir Resaltado</includeoutline>
+		<!-- This is the text that is appended to the beginning of the zipfile name to indicate the shapefiles labels in the TOC -->
+		<labelstexttoadd>Etiquetas</labelstexttoadd>
+        <configresultmessage>Configurar Shapefile</configresultmessage>
+        <removeresultmessage>Remover Shapefile</removeresultmessage>
+	</labels>
+</configuration>

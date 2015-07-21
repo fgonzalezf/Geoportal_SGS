@@ -1,0 +1,531 @@
+<?xml version="1.0" ?>
+<configuration>
+    <excludelayer>Zona Potencial Integral/0</excludelayer>
+    <excludelayer>Geomorfodinamica/3</excludelayer>
+    <excludelayer>Geomorfodinamica/4</excludelayer>
+    <excludelayer>Geomorfodinamica/5</excludelayer>
+    <excludelayer>Geomorfodinamica/6</excludelayer>
+    <excludelayer>Geomorfodinamica/1</excludelayer>
+    <excludelayer>Geomorfodinamica/7</excludelayer>
+    <excludelayer>Geomorfodinamica/8</excludelayer>
+    <excludelayer>geofisica/3</excludelayer>
+    <excludelayer>geofisica/5</excludelayer>
+    <excludelayer>geofisica/6</excludelayer>
+    <excludelayer>geofisica/7</excludelayer>
+    <excludelayer>geofisica/9</excludelayer>
+    <excludelayer>geofisica/10</excludelayer>
+    <excludelayer>geofisica/11</excludelayer>
+    <excludelayer>geofisica/12</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/6</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/5</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/4</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/3</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/2</excludelayer>
+    <excludelayer>Atlas Geologico Colombia/1</excludelayer>
+    
+    <excludelayer>Mapa Geologico Colombia/14</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/15</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/16</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/17</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/18</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/19</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/20</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/21</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/22</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/23</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/25</excludelayer>
+    <excludelayer>Mapa Geologico Colombia/10</excludelayer>
+    
+    
+    <layersettings>
+        <layer name="Estaciones GNSS SGC 2014">
+            <fields>
+                <field name="ESTACIÓN" alias="ESTACIÓN"/>
+                <field name="NOMBRE" alias="NOMBRE"/>
+                <field name="DEPARTAMENTO" alias="DEPARTAMENTO"/>
+                <field name="MUNICIPIO" alias="MUNICIPIO"/>
+                <field name="LOCALIZACIÓN" alias="LOCALIZACIÓN"/>
+                <field name="FECHA_DE_INSTALACIÓN" alias="FECHA_DE_INSTALACIÓN"/>
+                <field name="OPERACIÓN" alias="OPERACIÓN"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Geomorfodinamica/2">
+            <fields>
+                <field name="PGMD_COD" alias="Código" required="true"/>
+                <field name="PGMD_COOX" alias="Coordenada Este" required="true"/>
+                <field name="PGMD_COOY" alias="Coordenada Norte" required="true"/>
+                <field name="PGMD_CLIM" alias="Clima" required="true"/>
+                <field name="PGMD_PEND" alias="Pendiente" required="true"/>
+                <field name="PGMD_DPT" alias="Dirección Perfil Topográfico" required="true"/>
+                <field name="PGMD_DLC" alias="Dirección Línea Costa" required="true"/>
+                <field name="PGMD_DOL" alias="Dirección Oleaje" required="true"/>
+                <field name="PGMD_DDL" alias="Dirección Deriva Litoral" required="true"/>
+                <field name="PGMD_DVI" alias="Dirección Viento" required="true"/>
+                <field name="PGMD_POLA" alias="Período Ola" required="true"/>
+                <field name="PGMD_LOLA" alias="Longitud Ola" required="true"/>
+                <field name="PGMD_TROM" alias="Tipo Rompiente" required="true"/>
+                <field name="PGMD_URL" alias="Enlace PDF" required="true"/>
+                <field name="PGMD_VID" alias="Enlace Video" required="true"/>
+                <field name="PGMD_COMENT" alias="Comentarios" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Geomorfodinamica/9">
+            <fields>
+                <field name="SBZ_NOMBR" alias="Nombre" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="geofisica/0">
+            <fields>
+                <field name="ID_PMG" alias="Identificador PMG" required="true"/>
+                <field name="PMG_NOMB" alias="Nombre PMG" required="true"/>             
+                <field name="PMG_ALT" alias="Altitud o Elevacion PMG" required="true"/>
+                <field name="PST_FTE" alias="Fuente de Informacion PMG" required="true"/>
+                <field name="PMG_ANOMALIA_MAG" alias="Anomalia" required="true"/>
+                <field name="PMG_SIMB" alias="Simbolo PMG" required="true"/>
+                <field name="PMG_PREC_POS" alias="Precision posicion PMG" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="geofisica/1">
+            <fields>
+                <field name="PGV_NOMB" alias="Nombre del punto PGV" required="true"/>
+                <field name="PGV_FECHA" alias="Fecha PGV" required="true"/>
+                <field name="PGV_HORA" alias="Hora PGV" required="true"/>
+                <field name="PGV_ALT" alias="Altitud elevacion PGV" required="true"/>
+                <field name="PGV_LONG" alias="Logitud PGV" required="true"/>
+                <field name="PGV_LAT" alias="Latitud PGV" required="true"/>
+                <field name="PGV_EQP_MED" alias="Equipo de medicion PGV" required="true"/>
+                <field name="PST_CALD_DATO" alias="Calidad dato PGV" required="true"/>
+                <field name="PST_FTE" alias="Fuente informacion PGV" required="true"/>
+                <field name="PST_TIPO_OBSERV" alias="Tipo de medicion PGV" required="true"/>
+                <field name="PGV_VAL" alias="Validacion PGV" required="true"/>
+                <field name="PGV_OBSR" alias="Observaciones PGV" required="true"/>
+                <field name="PGV_SIMB" alias="Simbolo PGV" required="true"/>       
+                <field name="PGV_SIST_POSCH" alias="Sistema de posicion PGV" required="true"/>
+                <field name="PGV_SIST_POSCV" alias="Sistema Medicion Altura PGV" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="geofisica/2">
+            <fields>
+                <field name="BMA_NOMB_BASE" alias="Nombre Base" required="true"/>
+                <field name="BMA_FCH_I" alias="Fecha inicial BMA" required="true"/>
+                <field name="BMA_FCH_F" alias="Fecha final BMA" required="true"/>
+                <field name="BMA_HORA_I" alias="Hora inicial BMA" required="true"/>
+                <field name="BMA_HORA_F" alias="Hora final BMA" required="true"/>
+                <field name="BMA_ALT" alias="Altura BMA" required="true"/>
+                <field name="PST_PREC_POS" alias="Precision de la posicion BMA" required="true"/>
+                <field name="BMA_EQP_MED" alias="Equipo medicion BMA" required="true"/>
+                <field name="PST_PREC_ALTR" alias="Precision altura BMA" required="true"/>
+                <field name="PST_CALD_DATO" alias="Dato BMA" required="true"/>
+                <field name="PST_FUENTE" alias="Fuente BMA" required="true"/>
+                <field name="PST_TIPO_OBSERV" alias="Tipo medicion BMA" required="true"/>
+                <field name="BMA_VALD" alias="Validacion BMA" required="true"/>
+                <field name="BMA_OBSR" alias="Observaciones BMA" required="true"/>
+                <field name="BMA_RATA_MUEST" alias="Rata Muestreor BMA" required="true"/>
+                <field name="BMA_UNIDAD_RATA" alias="Unidad rata BMA" required="true"/>
+                <field name="BMA_SERIE_TIEMPO" alias="Serie de tiempo BMA" required="true"/>
+                <field name="BMA_LOC_EST" alias="Localizacion de estacion" required="true"/>
+                <field name="BMA_SIMB" alias="Simbolo BMA" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="geofisica/4">
+            <fields>
+                <field name="POZ_NOMB" alias="Nombre pozo" required="true"/>
+                <field name="POZ_ALT" alias="Altitud pozo" required="true"/>
+                <field name="POZ_LAT" alias="Latitud pozo" required="true"/>
+                <field name="POZ_LONG" alias="Logitud pozo" required="true"/>
+                <field name="POZ_PRF" alias="Profundidad pozo" required="true"/>
+                <field name="POZ_FECHA" alias="Fecha de Perforacion pozo" required="true"/>
+                <field name="PST_TIPO_POZO" alias="Tipo de Pozo" required="true"/>
+                <field name="POZ_OBSR" alias="Observaciones pozo" required="true"/>
+                <field name="POZ_SIMB" alias="Simbolo pozo" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="geofisica/8">
+            <fields>
+               
+                <field name="SFL_FECHA" alias="Fecha Toma" required="true"/>
+                <field name="SFL_SIMB" alias="Simbolo" required="true"/>
+                <field name="SFL_ULTIMO_USUARIO" alias="Ultimo Usuario" required="true"/>
+                <field name="SFL_ULTIMA_FECHA" alias="Ultima Fecha" required="true"/>
+                <field name="SFL_UKOAS" alias="Ukoas" required="true"/>
+                <field name="SFL_NOMB" alias="Nombre Sismica" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Geologico Colombia/8">
+            <fields>
+                
+                <field name="MGPST_TIPO_FALLA" alias="Tipo Falla" required="true"/>
+                <field name="NFG_CODG_NOMB" alias="Código Nombre Falla" required="true"/>
+                <field name="MGFG_NOMBR_FALLA" alias="Nombre Falla" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Geologico Colombia/9">
+            <fields>
+                <field name="MGPLI_NOMB_PLIEG" alias="Nombre Pliegue" required="true"/>
+                <field name="MGPST_TIPO_PLIEG" alias="Tipo Pliegue" required="true"/>
+                <field name="MGPLI_CODG_PLIEG" alias="Código Pliegue" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Geologico Colombia/24">
+            <fields>
+                <field name="MGCUC_OBJECTID" alias="Caracterización" required="true"/>
+                <field name="MGUCR_CODG" alias="Código" required="true"/>
+                <field name="MGUCR_SIMBL" alias="Símbolo" required="true"/>
+                <field name="MGCUCR_DESCR" alias="Descripción" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Amenaza Movimientos Masa/3">
+            <fields>              
+                <field name="PLR_NOMB_PLAN_RE" alias="PLR_NOMB_PLAN_RE" required="true"/>
+                <field name="PLR_CODIGO" alias="PLR_CODIGO" required="true"/>
+                <field name="PLR_DESC_DEPTOS" alias="PLR_DESC_DEPTOS" required="true"/>
+                <field name="URL_PDF" alias="URL_PDF" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Amenaza Movimientos Masa/4">
+            <fields>
+                <field name="NMG" alias="Nombre Subregión" required="true"/>
+                <field name="NMG2" alias="Nombre Región" required="true"/>
+                <field name="CATEG_AMENA" alias="Categoria Amenaza" required="true"/>
+                <field name="DESCRIPCION" alias="Descripción" required="true"/>
+                <field name="DESCRIP_PROC_MORFODINAMICO" alias="Descripción Proceso Morfodinámico" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/0">
+            <fields>
+                <field name="MPCC.Und_Carb_Prospec.AREA" alias="AREA" required="true"/>
+                <field name="PERIMETER" alias="PERIMETER" required="true"/>
+                <field name="UCG_P_" alias="UCG_P_" required="true"/>
+                <field name="UCG_P_ID" alias="UCG_P_ID" required="true"/>
+                <field name="COD" alias="COD" required="true"/>
+                <field name="UNIDAD_LIT" alias="UNIDAD_LIT" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/1">
+            <fields>
+                <field name="COD" alias="COD"/>
+                <field name="FORMACION" alias="FORMACION"/>
+                <field name="COD_FINAL" alias="COD_FINAL"/>
+                <field name="ZONA" alias="ZONA"/>
+                <field name="ZONA_1" alias="ZONA_1"/>
+                <field name="UNIDAD_LIT" alias="UNIDAD_LIT"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/3">
+            <fields>
+                <field name="OBJECTID_1" alias="OBJECTID_1" required="true"/>
+                <field name="ID" alias="Id" required="true"/>
+                <field name="DEPTO" alias="Depto" required="true"/>
+                <field name="ZONAS" alias="Zonas" required="true"/>
+                <field name="NUMERO" alias="Numero" required="true"/>
+                <field name="ZONA_CARBO" alias="Zona_Carbo" required="true"/>
+                <field name="SHAPE_LENG" alias="Shape_Leng" required="true"/>
+                <field name="USO" alias="USO" required="true"/>
+                <field name="T_RES_MED" alias="T_RES_MED" required="true"/>
+                <field name="T_RES_INDI" alias="T_RES_INDI" required="true"/>
+                <field name="T_RES_INF" alias="T_RES_INF" required="true"/>
+                <field name="M_RES_MED" alias="M_RES_MED" required="true"/>
+                <field name="M_RES_INDI" alias="M_RES_INDI" required="true"/>
+                <field name="M_RES_INF" alias="M_RES_INF" required="true"/>
+                <field name="POTEN_TOTA" alias="POTEN_TOTA" required="true"/>
+                <field name="POTEN_T" alias="POTEN_T" required="true"/>
+                <field name="POTEN_M" alias="POTEN_M" required="true"/>
+                <field name="UNID_POTEN" alias="UNID_POTEN" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/4">
+            <fields>
+                <field name="DEPTO" alias="Depto"/>
+                <field name="ZONAS" alias="Zonas"/>
+                <field name="NUMERO" alias="Numero"/>
+                <field name="ZONA_CARBO" alias="Zona_Carbo"/>
+                <field name="SHAPE_LENG" alias="Shape_Leng"/>
+                <field name="USO" alias="USO"/>
+                <field name="T_RES_MED" alias="T_RES_MED"/>
+                <field name="T_RES_INDI" alias="T_RES_INDI"/>
+                <field name="T_RES_INF" alias="T_RES_INF"/>
+                <field name="M_RES_MED" alias="M_RES_MED"/>
+                <field name="M_RES_INDI" alias="M_RES_INDI"/>
+                <field name="M_RES_INF" alias="M_RES_INF"/>
+                <field name="POTEN_TOTA" alias="POTEN_TOTA"/>
+                <field name="POTEN_T" alias="POTEN_T"/>
+                <field name="POTEN_M" alias="POTEN_M"/>
+                <field name="UNID_POTEN" alias="UNID_POTEN"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Estado de la cartografía">
+            <fields>
+                <field name="ECG_COD" alias="ECG_COD"/>
+                <field name="ECG_NUMR_P" alias="ECG_NUMR_P"/>
+                <field name="ECG_NOMBRE" alias="ECG_NOMBRE"/>
+                <field name="ECG_FECH_E" alias="ECG_FECH_E"/>
+                <field name="ECG_AUTR_P" alias="ECG_AUTR_P"/>
+                <field name="ECG_VECTOR" alias="ECG_VECTOR"/>
+                <field name="ECG_URL_PL" alias="ECG_URL_PL"/>
+                <field name="ECG_URL_ME" alias="ECG_URL_ME"/>
+                <field name="ECG_ULTIMO" alias="ECG_ULTIMO"/>
+                <field name="ECG_ULTIMA" alias="ECG_ULTIMA"/>
+                <field name="ECG_ESTADO" alias="ECG_ESTADO"/>
+                <field name="ECG_SIMBL" alias="ECG_SIMBL"/>
+                <field name="ECG_CART_D" alias="ECG_CART_D"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Amenaza Sismica">
+            <fields>
+                <field name="NOMDEPTO" alias="Nombre Departamento"/>
+                <field name="NOMMUN" alias="Nombre Municipio"/>
+                <field name="NOMCAB" alias="Nombre Cabecera Municipal"/>
+                <field name="POINT_X" alias="Longitud"/>
+                <field name="POINT_Y" alias="Latitud"/>
+                <field name="PGA75" alias="PGA75"/>
+                <field name="PGA225" alias="PGA225"/>
+                <field name="PGA475" alias="PGA475"/>
+                <field name="PGA975" alias="PGA975"/>
+                <field name="PGA2475" alias="PGA2475"/>
+                <field name="ESPECTRO_U" alias="Espectro uniforme de amenaza"/>
+                <field name="CURVAS_DE" alias="Curvas de exedencia"/>
+                <field name="DESAGREGAC" alias="Grafica de desagregación"/>
+                <field name="NIVEL" alias="Nivel de amenaza NSR-10"/>
+                <field name="AA" alias="AA"/>
+                <field name="AV" alias="AV"/>
+                <field name="AE" alias="AE"/>
+                <field name="AD" alias="AD"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Anomalia Geoquimica/0">
+            <fields>
+                <field name="ID_AGQ" alias="Identificador Anomalía"/>
+                <field name="AGC_NOMBRE" alias="Nombre Anomalía"/>
+                <field name="AGQ_OBSERVACIONES" alias="Observaciones"/>
+                <field name="PST_CLASE" alias="PST_CLASE"/>
+                <field name="AGQ_DESGEOGRAFICO" alias="Descriptor Geográfico"/>
+                <field name="AGQ_DESTEMATICO" alias="Descriptor Temático"/>
+                <field name="AGQ_DESINFO_RELEV" alias="Información Relevante"/>
+                <field name="PST_SIGNIFICATIVA" alias="PST_SIGNIFICATIVA"/>
+                <field name="PST_ESTACT_DESARROLLO" alias="PST_ESTACT_DESARROLLO"/>
+                <field name="AGQ_ROCAENCAJANTE" alias="Roca Encajante"/>
+                <field name="AGQ_CALIFICACION" alias="Calificación"/>
+                <field name="CLASE" alias="Clase Anomalía"/>
+                <field name="SIGNIFICANCIA" alias="Significancia Anomalía"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/8">
+            <fields>
+                <field name="ULTIMO_USU" alias="Último_Usuario" required="true"/>
+                <field name="NOMBRE_VOL" alias="Nombre_Volcán" required="true"/>
+                <field name="CODIGO_VOL" alias="Código_Volcán" required="true"/>
+                <field name="ULTIMA_FEC" alias="Última_Fecha" required="true"/>
+                <field name="LATITUD" alias="Latitud" required="true"/>
+                <field name="LONGITUD" alias="Longitud" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/9">
+            <fields>
+                <field name="AFGE_CODG_FGE" alias="Código" required="true"/>
+                <field name="APST_TIPO_FALLA" alias="Tipo_Falla" required="true"/>
+                <field name="APST_ACTV_FALLA" alias="Actividad Falla" required="true"/>
+                <field name="AFGE_ULTM_USUAR" alias="Último usuario" required="true"/>
+                <field name="AFGE_ULTM_FECHA" alias="Última Fecha" required="true"/>
+                <field name="EDA_CODG_EDAD" alias="Edad" required="true"/>
+                <field name="NFG_CODG_NOMB" alias="Nombre_Falla" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/10">
+            <fields>
+                <field name="APLI_NOMB_PLIEG" alias="Nombre_Pliegue" required="true"/>
+                <field name="APST_TIPO_PLIEG" alias="Tipo_Pliegue" required="true"/>
+                <field name="APST_CARCT_PLIEG" alias="Característica_Pliegue" required="true"/>
+                <field name="EDA_CODG_EDAD" alias="Edad_Pliegue" required="true"/>
+                <field name="APLI_ULTM_USUAR" alias="Último usuario" required="true"/>
+                <field name="APLI_ULTM_FECHA" alias="Última fecha" required="true"/>
+                <field name="APLI_CODG_PLIEG" alias="Código_Pliegue" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/11">
+            <fields>
+                            
+                <field name="AGCO.F04AUCR_UND_CRON_500K_A.SHAPE" alias="SHAPE" required="true"/>            
+                <field name="AGCO.CNU_CARACT_UND_CRONO.ACUC_SIMBL" alias="ACUC_SIMBL" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.EDA_CODG_I" alias="EDA_CODG_I" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.EDA_CODG_F" alias="EDA_CODG_F" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.ANUC_OBJEC" alias="ANUC_OBJEC" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.APST_PROV" alias="APST_PROV" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.AEDA_INI_I" alias="AEDA_INI_I" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.AEDA_FIN_I" alias="AEDA_FIN_I" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.ACUC_DESC" alias="ACUC_DESC" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.R" alias="R" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.G" alias="G" required="true"/>
+                <field name="AGCO.CNU_CARACT_UND_CRONO.B" alias="B" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Amenaza Movimientos Masa/4">
+            <fields>
+                <field name="NMG" alias="Nombre Subregión" required="true"/>
+                <field name="NMG2" alias="Nombre Región" required="true"/>
+                <field name="CATEG_AMENA" alias="Categoria Amenaza" required="true"/>
+                <field name="DESCRIPCION" alias="Descripción" required="true"/>
+                <field name="DESCRIP_PROC_MORFODINAMICO" alias="Descripción Proceso Morfodinámico" required="true"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/1">
+            <fields>
+                <field name="FORMACION" alias="FORMACION"/>
+                <field name="ZONA" alias="ZONA"/>
+                <field name="UNIDAD_LIT" alias="UNIDAD_LIT"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/4">
+            <fields>
+                <field name="DEPTO" alias="Depto"/>
+                <field name="ZONAS" alias="Zonas"/>
+                <field name="NUMERO" alias="Numero"/>
+                <field name="ZONA_CARBO" alias="Zona_Carbo"/>
+                <field name="USO" alias="USO"/>
+                <field name="T_RES_MED" alias="T_RES_MED"/>
+                <field name="T_RES_INDI" alias="T_RES_INDI"/>
+                <field name="T_RES_INF" alias="T_RES_INF"/>
+                <field name="M_RES_MED" alias="M_RES_MED"/>
+                <field name="M_RES_INDI" alias="M_RES_INDI"/>
+                <field name="M_RES_INF" alias="M_RES_INF"/>
+                <field name="POTEN_TOTA" alias="POTEN_TOTA"/>
+                <field name="POTEN_T" alias="POTEN_T"/>
+                <field name="POTEN_M" alias="POTEN_M"/>
+                <field name="UNID_POTEN" alias="UNID_POTEN"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Geologico Colombia/24">
+            <fields>
+                <field name="MGUCR_SIMBL" alias="Símbolo"/>
+                <field name="MGCUCR_DESCR" alias="Descripción"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Mapa Potencial Carbonifero Colombia/0">
+            <fields>
+                <field name="UNIDAD_LIT" alias="UNIDAD_LIT"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Amenaza Sismica">
+            <fields>
+                <field name="NOMDEPTO" alias="Nombre Departamento"/>
+                <field name="NOMMUN" alias="Nombre Municipio"/>
+                <field name="NOMCAB" alias="Nombre Cabecera Municipal"/>
+                <field name="ESPECTRO_U" alias="Espectro uniforme de amenaza"/>
+                <field name="CURVAS_DE" alias="Curvas de exedencia"/>
+                <field name="DESAGREGAC" alias="Grafica de desagregación"/>
+                <field name="NIVEL" alias="Nivel de amenaza NSR-10"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Anomalia Geoquimica/0">
+            <fields>
+                <field name="AGC_NOMBRE" alias="Nombre Anomalía"/>
+                <field name="AGQ_DESGEOGRAFICO" alias="Descriptor Geográfico"/>
+                <field name="AGQ_DESTEMATICO" alias="Descriptor Temático"/>
+                <field name="AGQ_DESINFO_RELEV" alias="Información Relevante"/>
+                <field name="AGQ_ROCAENCAJANTE" alias="Roca Encajante"/>
+                <field name="AGQ_CALIFICACION" alias="Calificación"/>
+                <field name="CLASE" alias="Clase Anomalía"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Anomalia Geoquimica/1">
+            <fields>
+                <field name="ULG_NOMBRE" alias="Nombre"/>
+                <field name="ULG_TERRENO" alias="Unidad Terreno"/>
+                <field name="ULG_SIMBOLO" alias="Símbolo"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/8">
+            <fields>
+                <field name="NOMBRE_VOL" alias="Nombre_Volcán"/>
+                <field name="CODIGO_VOL" alias="Código_Volcán"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/9">
+            <fields>
+                <field name="APST_TIPO_FALLA" alias="Tipo_Falla"/>
+                <field name="APST_ACTV_FALLA" alias="Actividad Falla"/>
+                <field name="NFG_CODG_NOMB" alias="Nombre_Falla"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+        <layer name="Atlas Geologico Colombia/10">
+            <fields>
+                <field name="APLI_NOMB_PLIEG" alias="Nombre_Pliegue"/>
+                <field name="APST_TIPO_PLIEG" alias="Tipo_Pliegue"/>
+                <field name="APST_CARCT_PLIEG" alias="Característica_Pliegue"/>
+                <field name="EDA_CODG_EDAD" alias="Edad_Pliegue"/>
+                <field name="APLI_ULTM_USUAR" alias="Último usuario"/>
+                <field name="APLI_ULTM_FECHA" alias="Última fecha"/>
+                <field name="APLI_CODG_PLIEG" alias="Código_Pliegue"/>
+            </fields>
+            <showattachments>false</showattachments>
+            <showrelatedrecords>false</showrelatedrecords>
+        </layer>
+    </layersettings>
+</configuration>

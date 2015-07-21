@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" ?>
+<configuration>
+    <label>Shapefile Widget</label>
+    <widgetversion>3.6</widgetversion>
+    <icon>assets/images/shapefiles.png</icon>
+    <openbydefault>true</openbydefault>
+    <description>The Shapefile Widget is a widget that allows you to load zipped shapefiles in the the ArcGIS Viwer for Flex.</description>
+    <helpurl>http://www.arcgis.com/home/item.html?id=2e9096c5d5044d39a264df759611686f</helpurl>
+</configuration>

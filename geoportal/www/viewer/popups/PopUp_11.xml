@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{NMG}</title>
+    <fields>
+        <field name="NMG2" alias="Nombre Región" visible="true"/>
+        <field name="REGION2" alias="N° Región" visible="true"/>
+        <field name="CATEG_AMENA" alias="Categoria Amenaza" visible="true"/>
+        <field name="DESCRIPCION" alias="Descripción" visible="true"/>
+        <field name="DESCRIP_PROC_MORFODINAMICO" alias="Descripción Proceso Morfodinámico" visible="true"/>      
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

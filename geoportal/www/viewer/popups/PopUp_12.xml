@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{PGMD_COD}</title>
+   <description>
+    	<![CDATA[
+<a href="{PGMD_URL}">PDF</a>
+<a href="{PGMD_VID}">Video</a>]]>
+</description>
+    <fields>
+        <field name="PGMD_COD" alias="Código"/>
+        <field name="PGMD_CLAT" alias="Latitud Decimal"/>
+        <field name="PGMD_CLON" alias="Longitud Decimal"/>
+        <field name="PGMD_COOX" alias="Coordenada Este"/>
+        <field name="PGMD_COOY" alias="Coordenada Norte"/>
+        <field name="PGMD_FECH" alias="Fecha"/>
+        <field name="PGMD_CLIM" alias="Clima"/>
+        <field name="PGMD_PEND" alias="Pendiente"/>
+        <field name="PGMD_DPT" alias="Dirección Perfil Topográfico"/>
+        <field name="PGMD_DLC" alias="Dirección Línea Costa"/>
+        <field name="PGMD_DOL" alias="Dirección Oleaje"/>
+        <field name="PGMD_DDL" alias="Dirección Deriva Litoral"/>
+        <field name="PGMD_DVI" alias="Dirección Viento"/>
+        <field name="PGMD_POLA" alias="Período Ola"/>
+        <field name="PGMD_LOLA" alias="Longitud Ola"/>
+        <field name="PGMD_TROM" alias="Tipo Rompiente"/>
+        <field name="PGMD_COMENT" alias="Comentarios"/>
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

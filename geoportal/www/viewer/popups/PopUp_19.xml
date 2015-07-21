@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{ZPQI_NOMBRE}</title>
+    <fields>
+        
+        <field name="ZPQI_NOMBRE" alias="Nombre"/>
+        <field name="ZPQI_POTENCIAL" alias="Potencial" visible="true"/>
+        <field name="ZPQI_AREA" alias="Área"/>
+        <field name="ZPQI_RESTRIC" alias="Restricción" visible="true"/>
+        <field name="ZPQI_TIPO_MIN" alias="Tipo Mineral" visible="true"/>
+        <field name="ZPQI_GMI" alias="GMI" visible="true"/>
+        <field name="ZPQI_RANGRAVIMETRICO" alias="Rango Gravimétrico" visible="true"/>
+        <field name="ZPQI_RANMAGNETICO" alias="Rango Magnético" visible="true"/>
+        <field name="ZPQI_ELEM_PRINC" alias="Elementos Principales"/>
+        <field name="ZPQI_ANOMALIAS" alias="Anomalías" visible="true"/>
+        <field name="ZPQI_DESC_TEMA" alias="Descripción Temática" visible="true"/>
+        <field name="ZPQI_DESC_GEO" alias="Descripción Geo"/>
+        <field name="ZPQI_OBSERVACIONES" alias="Observaciones"/>
+        <field name="ZPQI_USOSUELO" alias="Usos del Suelo" visible="true"/>
+        <field name="ZPQI_INF_TRANS" alias="Información Trans"/>
+        <field name="ZPQI_NUM_ANOM" alias="Número Anomalía" visible="true"/>
+        <field name="ZPQI_CCDE" alias="Código Departamento"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

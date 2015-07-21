@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{POZ_NOMB}</title>
+    <fields>
+        
+        <field name="POZ_NOMB" alias="Nombre pozo"/>
+        <field name="POZ_ALT" alias="Altitud pozo"/>
+        <field name="POZ_LAT" alias="Latitud pozo"/>
+        <field name="POZ_LONG" alias="Logitud pozo"/>
+        <field name="POZ_PRF" alias="Profundidad pozo" visible="true"/>
+        <field name="POZ_DMT" alias="Diametro pozo" visible="true"/>
+        <field name="POZ_FECHA" alias="Fecha de Perforacion pozo" visible="true"/>
+        <field name="POZ_SIST_POSCH" alias="Sistema medicion altura pozo" visible="true"/>
+        <field name="POZ_SIST_POSCV" alias="Sistema Posic  Lat/Long pozo" visible="true"/>
+        <field name="PST_TIPO_POZO" alias="Tipo de Pozo" visible="true"/>
+        <field name="POZ_OBSR" alias="Observaciones pozo" visible="true"/>
+        <field name="POZ_SIMB" alias="Simbolo pozo"/>
+       
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

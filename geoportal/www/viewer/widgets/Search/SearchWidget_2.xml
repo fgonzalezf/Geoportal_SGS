@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<configuration>
+    <zoomscale>50000</zoomscale>
+    <shareresults>false</shareresults>
+    <layers>
+        <layer>
+            <name>Punto Geomorfodinamico</name>
+            <url>http://srvagspru/arcgis/rest/services/Geomorfodinamica/Geomorfodinamica/MapServer/1</url>
+            <expression>PGMD_COD='[value]'</expression>
+            <textsearchlabel>Seleccionar por atributo</textsearchlabel>
+            <titlefield>PGMD_COD</titlefield>
+            <linkfield alias="Video" emptyalias="Video No Disponible">PGMD_VID</linkfield>
+            <linkfield2 alias2="PDF" emptyalias2="Archivo PDF No Disponible">PGMD_URL</linkfield2>
+            <fields>
+                <field name="PGMD_COD" alias="Codigo"/>
+                <field name="PGMD_COOX" alias="Coordenada X"/>
+                <field name="PGMD_URL" alias="Enlace PDF"/>
+                <field name="PGMD_VID" alias="Video"/>
+            </fields>
+            <orderbyfields>PGMD_COD ASC</orderbyfields>
+        </layer>
+    </layers>
+</configuration>

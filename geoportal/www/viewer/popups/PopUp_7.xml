@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{NOMCAB}</title>
+    <fields>
+        <field name="NOMDEPTO" alias="Nombre Departamento"/>
+        <field name="NOMMUN" alias="Nombre Municipio"/>
+        <field name="NOMCAB" alias="Nombre Cabecera Municipal"/>
+        <field name="PGA75" alias="PGA75" visible="true"/>
+        <field name="PGA225" alias="PGA225" visible="true"/>
+        <field name="PGA475" alias="PGA475" visible="true"/>
+        <field name="PGA975" alias="PGA975" visible="true"/>
+        <field name="PGA2475" alias="PGA2475" visible="true"/>
+        <field name="ESPECTRO_U" alias="Espectro uniforme de amenaza" visible="true"/>
+        <field name="CURVAS_DE" alias="Curvas de exedencia" visible="true"/>
+        <field name="DESAGREGAC" alias="Grafica de desagregación" visible="true"/>
+        <field name="NIVEL" alias="Nivel de amenaza NSR-10" visible="true"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

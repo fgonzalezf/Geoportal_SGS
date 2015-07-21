@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{BMA_NOMB_BASE}</title>
+    <fields>
+        
+        <field name="BMA_NOMB_BASE" alias="Nombre Base"/>
+        
+        <field name="BMA_ALT" alias="Altura BMA" visible="true"/>
+        <field name="PST_PREC_POS" alias="Precision de la posicion BMA" visible="true"/>
+        <field name="BMA_EQP_MED" alias="Equipo medicion BMA" visible="true"/>
+        <field name="PST_PREC_ALTR" alias="Precision altura BMA" visible="true"/>
+        <field name="PST_CALD_DATO" alias="Dato BMA"/>
+        <field name="PST_FUENTE" alias="Fuente BMA" visible="true"/>
+        <field name="PST_TIPO_OBSERV" alias="Tipo medicion BMA" visible="true"/>
+        <field name="BMA_VALD" alias="Validacion BMA" visible="true"/>
+        <field name="BMA_OBSR" alias="Observaciones BMA"/>
+        <field name="BMA_RATA_MUEST" alias="Rata Muestreor BMA"/>
+        <field name="BMA_UNIDAD_RATA" alias="Unidad rata BMA"/>
+        <field name="BMA_SERIE_TIEMPO" alias="Serie de tiempo BMA"/>
+        <field name="BMA_LOC_EST" alias="Localizacion de estacion"/>
+        <field name="BMA_SIMB" alias="Simbolo BMA"/>
+       
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

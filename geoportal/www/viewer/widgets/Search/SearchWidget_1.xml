@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" ?>
+<configuration>
+    <zoomscale>5000</zoomscale>
+    <shareresults>false</shareresults>
+    <layers>
+        <layer>
+            <name>Punto Geomorfodinamico</name>
+            <url>http://srvags.sgc.gov.co/arcgis/rest/services/Geomorfodinamica/Geomorfodinamica/MapServer/1</url>
+            <expression>upper (PGMD_COD) LIKE upper ('%[value]%')</expression>
+            <textsearchlabel>Seleccionar por atributo</textsearchlabel>
+            <titlefield>PGMD_COD</titlefield>
+            <linkfield alias="Video" emptyalias="Video No Disponible">PGMD_VID</linkfield>
+            <linkfield2 alias2="PDF" emptyalias2="Archivo PDF No Disponible">PGMD_URL</linkfield2>
+            <fields>
+                <field name="OBJECTID_1" alias="OBJECTID_1"/>
+                <field name="PGMD_COD" alias="PGMD_COD"/>
+                <field name="PGMD_COOX" alias="PGMD_COOX"/>
+                <field name="PGMD_COOY" alias="PGMD_COOY"/>
+                <field name="PGMD_FECH" alias="PGMD_FECH"/>
+                <field name="PGMD_CLIM" alias="PGMD_CLIM"/>
+                <field name="PGMD_PEND" alias="PGMD_PEND"/>
+                <field name="PGMD_DPT" alias="PGMD_DPT"/>
+                <field name="PGMD_DLC" alias="PGMD_DLC"/>
+                <field name="PGMD_DOL" alias="PGMD_DOL"/>
+                <field name="PGMD_DDL" alias="PGMD_DDL"/>
+                <field name="PGMD_DVI" alias="PGMD_DVI"/>
+                <field name="PGMD_POLA" alias="PGMD_POLA"/>
+                <field name="PGMD_LOLA" alias="PGMD_LOLA"/>
+                <field name="PGMD_TROM" alias="PGMD_TROM"/>
+                <field name="PGMD_URL" alias="PGMD_URL"/>
+                <field name="PGMD_VID" alias="PGMD_VID"/>
+                <field name="PGMD_COMEN" alias="PGMD_COMEN"/>
+                <field name="LAT_DEC" alias="LAT_DEC"/>
+                <field name="LONG_DEC" alias="LONG_DEC"/>
+            </fields>
+            <orderbyfields>OBJECTID_1 ASC</orderbyfields>
+        </layer>
+        <layer>
+            <name>Subzona</name>
+            <url>http://srvags.sgc.gov.co/arcgis/rest/services/Geomorfodinamica/Geomorfodinamica/MapServer/10</url>
+            <expression>upper (SBZ_NOMBR) LIKE upper ('%[value]%')</expression>
+            <textsearchlabel>Seleccionar por atributo</textsearchlabel>
+            <titlefield>SBZ_NOMBR</titlefield>
+            <fields>
+                <field name="SBZ_NOMBR" alias="Nombre"/>
+                <field name="SBZ_DESCRIPC" alias="Descripción"/>
+                <field name="SHAPE.AREA" alias="SHAPE.AREA"/>
+                <field name="SHAPE.LEN" alias="SHAPE.LEN"/>
+            </fields>
+            <orderbyfields>SBZ_NOMBR ASC</orderbyfields>
+        </layer>
+    </layers>
+</configuration>

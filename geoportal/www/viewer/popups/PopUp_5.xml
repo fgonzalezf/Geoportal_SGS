@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{AGC_NOMBRE}</title>
+    <fields>
+       
+        <field name="AGC_NOMBRE" alias="Nombre Anomalía"/>
+        <field name="AGQ_OBSERVACIONES" alias="Observaciones"/>
+        <field name="PST_CLASE" alias="PST_CLASE" visible="true"/>
+        <field name="AGQ_DESGEOGRAFICO" alias="Descriptor Geográfico" visible="true"/>
+        <field name="AGQ_DESTEMATICO" alias="Descriptor Temático" visible="true"/>
+        <field name="AGQ_DESINFO_RELEV" alias="Información Relevante" visible="true"/>
+        
+        <field name="AGQ_ROCAENCAJANTE" alias="Roca Encajante"/>
+        <field name="AGQ_CALIFICACION" alias="Calificación"/>
+        <field name="CLASE" alias="Clase Anomalía" visible="true"/>
+        <field name="SIGNIFICANCIA" alias="Significancia Anomalía"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

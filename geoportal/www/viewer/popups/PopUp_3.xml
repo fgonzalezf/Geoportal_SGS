@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{APLI_NOMB_PLIEG}</title>
+    <fields>
+        <field name="APLI_NOMB_PLIEG" alias="Nombre_Pliegue"/>
+        <field name="APST_TIPO_PLIEG" alias="Tipo_Pliegue" visible="true"/>
+        <field name="APLI_CODG_PLIEG" alias="Código_Pliegue" visible="true"/>     
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

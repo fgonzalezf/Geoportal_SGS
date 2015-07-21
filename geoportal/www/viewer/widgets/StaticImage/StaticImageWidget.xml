@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<configuration>
+    <imageurl>assets/images/logo_SGC.png</imageurl>
+    <linkurl>http://www.sgc.gov.co</linkurl>
+    <tooltip>http://www.sgc.gov.co</tooltip>
+</configuration>
+
+<!--
+    See Static Image widget tag reference at
+    http://links.esri.com/staticimagewidget
+-->

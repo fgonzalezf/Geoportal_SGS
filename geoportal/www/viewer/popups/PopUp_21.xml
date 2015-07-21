@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{ECG_NUMR_P}</title>
+    <fields>
+        <field name="ECG_COD" alias="Código" visible="true"/>
+        <field name="ECG_NUMR_P" alias="Número Plancha"/>
+        <field name="ECG_NOMBRE" alias="Nombre" visible="true"/>
+        <field name="ECG_FECH_E" alias="Fecha Elaboración" visible="true"/>
+        <field name="ECG_AUTR_P" alias="Autor Principal" visible="true"/>
+        <field name="ECG_VECTOR" alias="Vectorización" visible="true"/>
+        <field name="ECG_URL_PL" alias="PDF Plancha" visible="true"/>
+        <field name="ECG_URL_ME" alias="PDF Memoria" visible="true"/>
+        <field name="ECG_ESTADO" alias="Estado Cartografía" visible="true"/>
+        <field name="ECG_SIMBL" alias="Símbolo"/>
+        <field name="ECG_CART_D" alias="Cartografía D"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

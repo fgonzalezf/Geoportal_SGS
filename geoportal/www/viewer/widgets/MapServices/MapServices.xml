@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<configuration>
+	  <color>0xffffff</color>
+      <mapService label="ESRI Census USA " type="dynamic" visible="true" alpha="1"
+                   url="http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Census_USA/MapServer"
+                   keywords="Census 2000, including total population, population density, racial counts"
+                   previewExtent=""
+                   description="This service presents various population statistics from Census 2000, including total population, population density, racial counts, and more. The map service presents statistics at the state, county, block group, and block point levels."
+                   loadBottom="1"
+      />
+      <mapService label="Boundaries and Places" type="tiled" visible="true" alpha="1"
+                   url="http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer"
+                   keywords="county,state/province,place names"
+                   previewExtent=""
+                   description="This map presents country, state/province, and county or equivalent boundaries and place names for the world.The map was developed by ESRI using administrative and cities data from ESRI and AND Mapping. This map is designed for use with services with lighter backgrounds, such as World Shaded Relief. For more information on this map, visit us online."
+                   loadBottom="0"
+       />
+       <mapService label="USGS NHSS - Weather" type="dynamic" visible="true" alpha=".75"
+                   url="http://rmgsc.cr.usgs.gov/ArcGIS/rest/services/nhss_weat/MapServer"
+                   keywords="USGS NHSS Weather"
+                   previewExtent=""
+                   description="This map presents information about current United States weather watches and warnings that have been issued by NOAA’s National Weather Service (NWS). This map was developed as part of the United States Geological Survey’s (USGS) Natural Hazards Support System(NHSS) which is available at http://nhss.cr.usgs.gov. But although this application was developed by the USGS, it contains data and information from a variety of public data sources, including non-USGS data. Therefore detailed information about each of these data providers, including specific data source, data currency and disclaimers, is provided at http://nhss.cr.usgs.gov/data.shtml." 
+       			   loadBottom="0"
+       />
+       <mapService label="USGS NHSS - Natural Hazards" type="dynamic" visible="true" alpha="1"
+			       url="http://rmgsc.cr.usgs.gov/ArcGIS/rest/services/nhss_haz/MapServer"
+			       keywords="USGS NHSS, Natural Hazards, fires, floods, earthquakes"
+			       previewExtent=""
+			       description=" This map presents information about current natural hazards events (hurricanes, earthquakes, wildfires, etc.) that are occurring in both the United States and around the world. This map was developed as part of the United States Geological Survey’s (USGS) Natural Hazards Support System (NHSS) which is available at http://nhss.cr.usgs.gov. But although this application was developed by the USGS, it contains data and information from a variety of public data sources, including non-USGS data. Therefore detailed information about each of these data providers, including specific data source, data currency and disclaimers, is provided at http://nhss.cr.usgs.gov/data.shtml." 
+				   loadBottom="1"  
+	  />
+	  <mapService label="Fires" type="feature" visible="true" alpha="1"
+	  			   previewExtent=""
+	  			   keywords="Fires"
+                   info="widgets/InfoTemplates/SimpleInfoWinWidget.swf"
+                   infoconfig="widgets/InfoTemplates/IWT_Fires.xml"
+                   url="http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Fire/Sheep/FeatureServer/0"
+                   description="Fires in California"
+                   loadBottom="0"
+                   />
+ </configuration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{UNIDAD_LIT}</title>
+    <fields>
+        
+        <field name="UCG_P_" alias="UCG_P_" visible="true"/>
+        <field name="UCG_P_ID" alias="UCG_P_ID" visible="true"/>
+        <field name="COD" alias="COD" visible="true"/>
+        <field name="UNIDAD_LIT" alias="UNIDAD_LIT"/>
+      
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+<openbydefault>false</openbydefault>
+<icon>images/i_epwidget.png</icon>
+<label>Perfil de Elevación</label>
+<description>Widget de Perfiles de Elevación y batimetría</description>
+<helpurl>http://www.arcgis.com/home/item.html?id=b9d247c297f144459854751740f59f68</helpurl>
+</configuration>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{SBZ_NOMBR}</title>
+    <fields>
+        <field name="SBZ_NOMBR" alias="Nombre"/>
+        <field name="SBZ_DESCRIPC" alias="Descripción" visible="true"/>       
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

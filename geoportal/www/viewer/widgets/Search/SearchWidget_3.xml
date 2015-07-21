@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<configuration>
+	<zoomscale>50000</zoomscale>
+	<shareresults>false</shareresults>
+	<layers>
+		<layer>
+			<name>Busqueda por Municipio</name>
+			<url>http://srvags.sgc.gov.co/arcgis/rest/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/5</url>
+			<expression>upper(MUNICIPIO) LIKE upper('%[value]%')</expression>
+			<textsearchlabel>Seleccionar por atributo</textsearchlabel>
+			<titlefield>MUNICIPIO</titlefield>
+			<fields>
+				<field name="MUNICIPIO" alias="Municipio"/>
+				<field name="DEPARTAMEN" alias="Departamen"/>
+				<field name="AREA_HA" alias="Area_Ha"/>
+			</fields>
+			<orderbyfields>MUNICIPIO ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>Busqueda Por Departamento</name>
+			<url>http://srvags.sgc.gov.co/arcgis/rest/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/6</url>
+			<expression>upper(DPT_NOMBRE) LIKE upper('%[value]%')</expression>
+			<textsearchlabel>Busqueda por Departamentos</textsearchlabel>
+			<titlefield>DPT_NOMBRE</titlefield>
+			<fields>
+				<field name="DPT_NOMBRE" alias="DPT_NOMBRE"/>
+				<field name="DPT_COD" alias="DPT_COD"/>
+				<field name="DPT_AREA" alias="DPT_AREA"/>
+			</fields>
+			<orderbyfields>DPT_COD ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>Busqueda por Indice 1:100.000</name>
+			<url>http://srvags.sgc.gov.co/arcgis/rest/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/2</url>
+			<expression>upper(PLA_NUMR_P) LIKE upper('%[value]%')</expression>
+			<textsearchlabel>Busqueda por Indice escala 100.000</textsearchlabel>
+			<titlefield>PLA_COD</titlefield>
+			<fields>
+				<field name="PLA_COD" alias="PLA_COD"/>
+				<field name="PLA_NUMR_P" alias="PLA_NUMR_P"/>
+			</fields>
+			<orderbyfields>PLA_COD ASC</orderbyfields>
+		</layer>
+	</layers>
+	
+	<symbols>
+		<simplefillsymbol color="0x079CFF" alpha='0.0' >
+			<outline color="0x079CFF"/>
+		</simplefillsymbol>
+	</symbols>
+</configuration>

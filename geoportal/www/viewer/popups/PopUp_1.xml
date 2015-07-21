@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{NOMBRE_VOL}</title>
+    <fields>
+        
+        <field name="NOMBRE_VOL" alias="Nombre_Volcán"/> 
+        <field name="LATITUD" alias="Latitud" visible="true"/>
+        <field name="LONGITUD" alias="Longitud" visible="true"/>
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

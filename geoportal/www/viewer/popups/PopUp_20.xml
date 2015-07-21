@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{NOMBRE}</title>
+    <fields>
+        <field name="ESTACIÓN" alias="ESTACIÓN" visible="true"/>
+        <field name="NOMBRE" alias="NOMBRE"/>
+        <field name="DEPARTAMENTO" alias="DEPARTAMENTO"/>
+        <field name="MUNICIPIO" alias="MUNICIPIO"/>
+        <field name="LOCALIZACIÓN" alias="LOCALIZACIÓN" visible="true"/>
+        <field name="FECHA_DE_INSTALACIÓN" alias="FECHA_DE_INSTALACIÓN"/>
+        <field name="ENTIDAD" alias="ENTIDAD" visible="true"/>
+        <field name="OBSERVACIONES" alias="OBSERVACIONES"/>
+        <field name="OPERACIÓN" alias="OPERACIÓN" visible="true"/>
+        <field name="DESCRIPCIÖN" alias="DESCRIPCIÖN" visible="true"/>     
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{AGCO.F04AUCR_UND_CRON_500K_A.ACUC_OBJECTID}</title>
+    <fields>
+        
+        <field name="AGCO.F04AUCR_UND_CRON_500K_A.ACUC_OBJECTID" alias="Caracterización"/>
+        <field name="AGCO.F04AUCR_UND_CRON_500K_A.AUCR_SIMBL" alias="Símbolo"/>       
+        <field name="AGCO.F04AUCR_UND_CRON_500K_A.AUCR_CODG" alias="Código UCR" visible="true"/>   
+        <field name="AGCO.CNU_CARACT_UND_CRONO.ACUC_SIMBL" alias="ACUC_SIMBL" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.EDA_CODG_I" alias="EDA_CODG_I" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.EDA_CODG_F" alias="EDA_CODG_F" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.ANUC_OBJEC" alias="ANUC_OBJEC" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.APST_PROV" alias="APST_PROV" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.AEDA_INI_I" alias="AEDA_INI_I" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.AEDA_FIN_I" alias="AEDA_FIN_I" visible="true"/>
+        <field name="AGCO.CNU_CARACT_UND_CRONO.ACUC_DESC" alias="ACUC_DESC" visible="true"/>
+       
+        
+    </fields>
+    <showattachments>false</showattachments>
+    <showrelatedrecords>false</showrelatedrecords>
+</configuration>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{ZONA_CARBO}</title>
+    <fields>
+        
+       <field name="DEPTO" alias="Depto" visible="true"/>
+       <field name="ZONAS" alias="Zonas" visible="true"/>       
+       <field name="ZONA_CARBO" alias="Zona_Carbo"/>      
+       <field name="USO" alias="USO"/>
+       <field name="T_RES_MED" alias="T_RES_MED"/>
+       <field name="T_RES_INDI" alias="T_RES_INDI" visible="true"/>
+       <field name="T_RES_INF" alias="T_RES_INF" visible="true"/>
+       <field name="M_RES_MED" alias="M_RES_MED" visible="true"/>
+       <field name="M_RES_INDI" alias="M_RES_INDI" visible="true"/>
+       <field name="M_RES_INF" alias="M_RES_INF" visible="true"/>
+       <field name="POTEN_TOTA" alias="POTEN_TOTA"/>
+       <field name="POTEN_T" alias="POTEN_T"/>
+       <field name="POTEN_M" alias="POTEN_M"/>
+       <field name="UNID_POTEN" alias="UNID_POTEN"/>
+       
+   </fields>
+   <showattachments>false</showattachments>
+   <showrelatedrecords>false</showrelatedrecords>
+</configuration>
