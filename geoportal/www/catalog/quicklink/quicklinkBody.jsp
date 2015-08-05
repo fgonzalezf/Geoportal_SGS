@@ -19,43 +19,119 @@ $(function() {
 <br>
 <B>Listado de Geoservicios WMS</B>
 <br>
+Para ser consumidos desde software GIS
 <br>
 
-<B>Mapa Geológico de Colombia</B>
+<B>Amenaza Volcánica</B>
 <br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Geologico_Colombia/Mapa_Geologico_Colombia/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Geologico_Colombia/Mapa_Geologico_Colombia/MapServer/WmsServer</a>
-<br>
-<br>
-
-<B>Estaciones con Propósitos Geodinámicas</B>
-<br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Estaciones_GNSS/Estaciones_GNSS_SGC_2014/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Estaciones_GNSS/Estaciones_GNSS_SGC_2014/MapServer/WmsServer</a>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Amenaza_Volcanica/Amenaza_Volcanica/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Amenaza_Volcanica/Amenaza_Volcanica/MapServer/WMSServer</a>
 <br>
 <br>
 
-<B>Estado de la Cartografía Geológica</B>
+<B>Amenaza por Movimientos en Masa</B>
 <br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WmsServer</a>
-<br>
-<br>
-
-<B>Información Geomorfodinámica de los Litorales Colombianos</B>
-<br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Geomorfodinamica/Geomorfodinamica/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Geomorfodinamica/Geomorfodinamica/MapServer/WmsServer</a>
-
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Amenaza_MM/Mapa_Amenaza_MM/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Amenaza_MM/Mapa_Amenaza_MM/MapServer/WMSServer</a>
 <br>
 <br>
 
-<B>Mapa del Potencial Carbonífero de Colombia</B>
+<B>Atlas Geológico Colombiano</B>
 <br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WmsServer</a>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Atlas_Geologico_Colombiano/Atlas_Geologico_Colombia/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Atlas_Geologico_Colombiano/Atlas_Geologico_Colombia/MapServer/WMSServer</a>
 <br>
 <br>
 
-<B>Mapa de Amenaza Sísmica </B>
+<B>Estaciones GNSS</B>
 <br>
-<a href="http://srvags.sgc.gov.co/arcgis/services/Amenaza_Sismica/Amenaza_Sismica_Nacional/MapServer/WmsServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Amenaza_Sismica/Amenaza_Sismica_Nacional/MapServer/WmsServer</a>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Estaciones_GNSS/Estaciones_GNSS_SGC_2014/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Estaciones_GNSS/Estaciones_GNSS_SGC_2014/MapServer/WMSServer</a>
 
+<br>
+<br>
+
+<B>Estado de la cartográfia Geológica</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Geofísica </B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Geofisica/Geofisica_2014/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Geofisica/Geofisica_2014/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Geomorfodinámica Costera</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Geomorfodinamica/Geomorfodinamica/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Geomorfodinamica/Geomorfodinamica/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Mapa Geológico Colombiano</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Geologico_Colombia/Mapa_Geologico_Colombia/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Geologico_Colombia/Mapa_Geologico_Colombia/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Mapa de Intensidades Máximas Observadas</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Intensidad_Maxima_Observada_Colombia/Mapa_Intensidades_Maximas_Colombia/MapServer/WMSServer" style= "font-size:12px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Intensidad_Maxima_Observada_Colombia/Mapa_Intensidades_Maximas_Colombia/MapServer/WMSServer</a>
+<br>
+<br>
+
+
+<B>Mapa Inventario Muestra Litoteca</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Inventario_Muestra_Litoteca/Mapa_Inventario_Muestra_Litoteca/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Inventario_Muestra_Litoteca/Mapa_Inventario_Muestra_Litoteca/MapServer/WMSServer</a>
+<br>
+<br>
+
+
+<B>Mapa Metalogénico Colombia</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Metalogenico_Colombia_2002/Mapa_Metalogenico_Colombia_2002/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Metalogenico_Colombia_2002/Mapa_Metalogenico_Colombia_2002/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Mapa Potencial Carbonífero de Colombia</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Metalogenico_Colombia_2002/Mapa_Metalogenico_Colombia_2002/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Metalogenico_Colombia_2002/Mapa_Metalogenico_Colombia_2002/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Mapa Metalogénico Colombia</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Metadato Geográfico</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/METG/METADATO/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/METG/METADATO/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Reporte Geólogico de Termales</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/MTER/Reporte_Geologico_Termales/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/MTER/Reporte_Geologico_Termales/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Zonas de exploración Criterio Hidrogeológico</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Zonas_Exploracion_Critero_Hidrogeologico/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Zonas_Exploracion_Critero_Hidrogeologico/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Zonas de Exploración Criterio Demanda</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Zonas_Explotacion_Criterio_Demanda/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Zonas_Explotacion_Criterio_Demanda/MapServer/WMSServer</a>
+<br>
+<br>
+
+<B>Diferenciación Rocas Sedimentarias y Depositos</B>
+<br>
+<a href="http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Diferenciacion_Rocas_Sedimentarias_y_Depositos/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Diferenciacion_Rocas_Sedimentarias_y_Depositos/MapServer/WMSServer</a>
+<br>
+<br>
 
 </div>
 

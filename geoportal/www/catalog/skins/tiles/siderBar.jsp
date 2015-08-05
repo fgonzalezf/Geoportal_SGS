@@ -398,7 +398,7 @@ $(function() {
 		                label: '<B>Estado Cartografía <br> Geológica</B>',  
 		                data: '',  
 		                children:[  
-							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/EstadoCartografia.pdf'},   
+							{label:'Descripción', data:'/catalog/PDF/EstadoCartografia.pdf'},   
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Estado_Cartografia_Geologica/'},  
 		                    ]  
 		            },
@@ -422,7 +422,7 @@ $(function() {
 		                data: '',  
 		                children:[    
 		                    {label:'Enlace a pagina Web',data: 'http://aplicaciones1.sgc.gov.co/sicat/html/ConsultaBasica.aspx'}, 
-		                    {label:'Registro de activos de <br> información',data: '/geoportalsgc/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf'},
+		                    {label:'Registro de activos de <br> información',data: '/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf'},
 		                    ]  
 		            },
 		            {  
@@ -439,33 +439,40 @@ $(function() {
 		        ],  
 					nodeSelect: function(event, ui) { 
 		        	
-		        	if (ui.data.indexOf("bases") !=-1 || ui.data.indexOf("estadisticas") !=-1){
-		        		switch (ui.data) {
-		        	    case "/catalog/quicklink/basesDatosPublicacion.page":
-		        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
-		        	    	window.location.replace(urlf2);
-		        	        break;
-		        	    case "/catalog/quicklink/estadisticas.page":
-		        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
-		        	    	window.location.replace(urlf2);
-		        	        break;
-		        		}
-		        		
-		        	
-					return false;
-		        	}
+						if (ui.data.indexOf("bases") !=-1 || ui.data.indexOf("estadisticas") !=-1){
+			        		switch (ui.data) {
+			        	    case "/catalog/quicklink/basesDatosPublicacion.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    case "/catalog/quicklink/estadisticas.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+							
+			        		}
+			        		
+			       
+			        	}
+						else if(ui.data.indexOf("/PDF/") !=-1)  {
+							switch (ui.data) {
+								case "/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							case "/catalog/PDF/EstadoCartografia.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							}
+							
+						}
 		        	else if(ui.data.indexOf("http://") !=-1)  {
-		        		//var url= document.URL;
-		        		//var corte = url.split("/");
-		        		//var dominio = corte[0];
-		        		//var ruta= dominio +ui.data;
+		        		
 		        		window.open(ui.data);
 		        	}
 		        	else if(ui.data!="")  {
-		        		//var url= document.URL;
-		        		//var corte = url.split("/");
-		        		//var dominio = corte[0];
-		        		//var ruta= dominio +ui.data;
+		        		
 		        		var urlf='${pageContext.request.contextPath}'+ui.data;
 		        		window.location.replace(urlf);
 		        	}
