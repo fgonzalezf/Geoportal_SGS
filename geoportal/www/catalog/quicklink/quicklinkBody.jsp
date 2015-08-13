@@ -47,7 +47,7 @@ Para ser consumidos desde software GIS
 <br>
 <br>
 
-<B>Estado de la cartográfia Geológica</B>
+<B>Estado de la cartografía Geológica</B>
 <br>
 <a href="http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Estado_Cartografia_Geologica/Estado_Catografia_Geologica/MapServer/WMSServer</a>
 <br>
@@ -109,7 +109,7 @@ Para ser consumidos desde software GIS
 <br>
 <br>
 
-<B>Reporte Geólogico de Termales</B>
+<B>Reporte Geológico de Termales</B>
 <br>
 <a href="http://srvags.sgc.gov.co/arcgis/services/MTER/Reporte_Geologico_Termales/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/MTER/Reporte_Geologico_Termales/MapServer/WMSServer</a>
 <br>
@@ -127,7 +127,7 @@ Para ser consumidos desde software GIS
 <br>
 <br>
 
-<B>Diferenciación Rocas Sedimentarias y Depositos</B>
+<B>Diferenciación Rocas Sedimentarias y Depósitos</B>
 <br>
 <a href="http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Diferenciacion_Rocas_Sedimentarias_y_Depositos/MapServer/WMSServer" style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/PEXAS/PEXAS_Diferenciacion_Rocas_Sedimentarias_y_Depositos/MapServer/WMSServer</a>
 <br>

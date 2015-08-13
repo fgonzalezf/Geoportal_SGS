@@ -426,6 +426,15 @@ $(function() {
 		                    ]  
 		            },
 		            {  
+		                label: '<B>Políticas y Manuales</B>',  
+		                data: '',  
+		                children:[  
+						    {label:'Manuales',data:'/catalog/quicklink/basesDatosPublicacion.page' },
+		                    {label:'Publicaciones',data:'http://www.sgc.gov.co/Noticias/General/Publicacion-de-productos-oficializados-Acta-No--02.aspx' }, 
+		                    
+		                    ]  
+		            },
+		            {  
 		                label: '<B>Productos Geocientíficos</B>',  
 		                data: '',  
 		                children:[  

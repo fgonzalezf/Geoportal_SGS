@@ -768,6 +768,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+  <!-- manualesPoliticas page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.manualesPoliticas.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/manualesPoliticas.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  <!-- description page -->
  	<navigation-rule>
  		<navigation-case>
