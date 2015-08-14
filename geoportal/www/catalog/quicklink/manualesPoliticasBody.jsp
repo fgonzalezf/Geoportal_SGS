@@ -14,14 +14,14 @@
      
          ],
          datasource: [
-             {'Nombre':'Geoquímica','Descripción': 'Base de Datos geoquímica 2010', 'Archivo':'gq_AN_2010.mdb'},
+             {'Nombre':'Manual de Información','Descripción': 'Manual de suministro y entrega de información geológica', 'Archivo':'Manual_Informacion.pdf'},
              
          ],
          selectionMode: 'single',
          rowSelect: function(event, data) {
-        	 if (data.Nombre == "Geoquímica")
+        	 if (data.Nombre == "Manual de Información")
         		 {
-        		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/BasesDeDatos/gq_AN_02-09-13.mdb');
+        		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Manuales/MANUAL_INFORMACION_V1.pdf');
         		 }
         	 
          },
