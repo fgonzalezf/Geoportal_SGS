@@ -776,6 +776,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ <!-- Politicas page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.Politicas.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/Politicas.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  <!-- description page -->
  	<navigation-rule>
  		<navigation-case>

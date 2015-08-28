@@ -41,11 +41,19 @@ $(function() {
 		         },
 	           
 	            {  
-	                label: '<B>Atlas Geológico</B>',  
+	                label: '<B>Atlas Geológico 2007</B>',  
 	                data: '',  
 	                children:[
 	                    
 	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Atlas_Geologico_Colombia/'},  
+	                    ]  
+	            },
+	            {  
+	                label: '<B>Atlas Geológico 2015</B>',  
+	                data: '',  
+	                children:[
+	                    
+	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Atlas_Geologico_Colombia_2015/'},  
 	                    ]  
 	            },
 	           
@@ -69,11 +77,19 @@ $(function() {
 	            
 	            
 	            {  
-	                label: '<B>Mapa Geológico <br> de Colombia</B>',  
+	                label: '<B>Mapa Geológico <br> de Colombia 2007</B>',  
 	                data: '',  
 	                children:[  
 					    {label:'Descripción', data:'/geoportalsgc/catalog/PDF/Mapa_Geologico_Colombia.pdf'}, 
 	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia/'}  
+	                    ]  
+	            },
+	            
+	            {  
+	                label: '<B>Mapa Geológico <br> de Colombia 2015</B>',  
+	                data: '',  
+	                children:[  
+	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia_2015/'}  
 	                    ]  
 	            },
 	            {  
@@ -430,6 +446,7 @@ $(function() {
 		                data: '',  
 		                children:[  
 						    {label:'Manuales',data:'/catalog/quicklink/manualesPoliticas.page' },
+						    {label:'Políticas',data:'/catalog/quicklink/Politicas.page' },
 		                                
 		                    ]  
 		            },

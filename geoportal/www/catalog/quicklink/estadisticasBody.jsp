@@ -8,36 +8,27 @@
          },
          columns: [
              {field:'Nombre', headerText: 'Nombre', sortable:true},
-             {field:'Descripción', headerText: 'Periodo', sortable:true},
+             {field:'Descripcion', headerText: 'Periodo', sortable:true},
              {field:'Archivo', headerText: 'Archivo', sortable:true},
      
          ],
          datasource: [
-             {'Nombre':'Estadisticas Sesiones','Descripción': "Junio 2015", 'Archivo':'Sesiones_Junio.pdf'},
-             {'Nombre':'Estadisticas Pais','Descripción': "Junio 2015", 'Archivo':'Paises_Junio.pdf'},
-             {'Nombre':'Estadisticas Paginas','Descripción': "Junio 2015", 'Archivo':'Paginas_Junio.pdf'},
-             {'Nombre':'Estadisticas Ciudad','Descripción': "Junio 2015", 'Archivo':'Ciudades_Junio.pdf'},
-             
+             {'Nombre':'Estadísticas','Descripcion': "Junio 2015", 'Archivo':'Estadistica Junio Portal GeograficoInstitucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Julio 2015", 'Archivo':'Estadistica Julio Portal GeograficoInstitucional.pdf'},
+            
              
          ],
          selectionMode: 'single',
          rowSelect: function(event, data) {
-        	 if (data.Nombre == 'Estadisticas Sesiones')
+        	 if (data.Descripcion == 'Junio 2015')
     		 {
-    		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/sesiones_Junio.pdf');
+    		 	 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaJunioPortalGeograficoInstitucional.pdf');
     		 }
-        	 else if (data.Nombre == 'Estadisticas Pais')
+        	 else if (data.Descripcion == 'Julio 2015')
              {
-        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/paises_Junio.pdf');
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaJulioPortalGeograficoInstitucional.pdf');
         	 }
-        	 else if (data.Nombre == 'Estadisticas Paginas')
-             {
-        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/paginas_Junio.pdf');
-        	 }
-        	 else if (data.Nombre == 'Estadisticas Ciudad')
-             {
-        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/ciudad_Junio.pdf');
-        	 }
+        	
          },
         
      });
