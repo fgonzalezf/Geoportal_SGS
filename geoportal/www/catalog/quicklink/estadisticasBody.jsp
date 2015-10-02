@@ -13,10 +13,12 @@
      
          ],
          datasource: [
-             {'Nombre':'Estadísticas','Descripcion': "Junio 2015", 'Archivo':'Estadistica Junio Portal GeograficoInstitucional.pdf'},
-             {'Nombre':'Estadísticas','Descripcion': "Julio 2015", 'Archivo':'Estadistica Julio Portal GeograficoInstitucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Junio 2015", 'Archivo':'Estadística Junio Portal Geográfico Institucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Julio 2015", 'Archivo':'Estadística Julio Portal Geográfico Institucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Agosto 2015", 'Archivo':'Estadística Agosto Portal Geográfico Institucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Septiembre 2015", 'Archivo':'Estadística Septiembre Portal Geográfico Institucional.pdf'},
             
-             
+              
          ],
          selectionMode: 'single',
          rowSelect: function(event, data) {
@@ -28,7 +30,16 @@
              {
         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaJulioPortalGeograficoInstitucional.pdf');
         	 }
-        	
+        	 else if (data.Descripcion == 'Agosto 2015')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaAgostoPortalGeograficoInstitucional.pdf');
+        	 }
+        	 else if (data.Descripcion == 'Septiembre 2015')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaSeptiembrePortalGeograficoInstitucional.pdf');
+        	 }
+        	 
+        	       	 
          },
         
      });

@@ -54,6 +54,7 @@ $(function() {
 	                children:[
 	                    
 	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Atlas_Geologico_Colombia_2015/'},  
+	                    {label:'Visor Geográfico (JavaScript)',data: 'http://srvags.sgc.gov.co/JSViewer/Atlas_Geologico_colombiano_2015/'},
 	                    ]  
 	            },
 	           
@@ -430,7 +431,8 @@ $(function() {
 		                label: '<B>Metadato Geográfico</B>',  
 		                data: '',  
 		                children:[    
-		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Metadato_Geografico/'}  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Metadato_Geografico/'},
+		                    {label:'Visor Geográfico (JavaScript)',data: 'http://srvags.sgc.gov.co/JSViewer/Metadato_Geografico/'},
 		                    ]  
 		            },
 		            {  
