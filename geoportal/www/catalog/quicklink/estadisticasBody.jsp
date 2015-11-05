@@ -17,6 +17,7 @@
              {'Nombre':'Estadísticas','Descripcion': "Julio 2015", 'Archivo':'Estadística Julio Portal Geográfico Institucional.pdf'},
              {'Nombre':'Estadísticas','Descripcion': "Agosto 2015", 'Archivo':'Estadística Agosto Portal Geográfico Institucional.pdf'},
              {'Nombre':'Estadísticas','Descripcion': "Septiembre 2015", 'Archivo':'Estadística Septiembre Portal Geográfico Institucional.pdf'},
+             {'Nombre':'Estadísticas','Descripcion': "Octubre 2015", 'Archivo':'Estadística Octubre Portal Geográfico Institucional.pdf'},
             
               
          ],
@@ -37,6 +38,10 @@
         	 else if (data.Descripcion == 'Septiembre 2015')
              {
         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaSeptiembrePortalGeograficoInstitucional.pdf');
+        	 }
+        	 else if (data.Descripcion == 'Octubre 2015')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaOctubrePortalGeograficoInstitucional.pdf');
         	 }
         	 
         	       	 

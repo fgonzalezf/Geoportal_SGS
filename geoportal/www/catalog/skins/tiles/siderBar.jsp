@@ -82,7 +82,8 @@ $(function() {
 	                data: '',  
 	                children:[  
 					    {label:'Descripción', data:'/geoportalsgc/catalog/PDF/Mapa_Geologico_Colombia.pdf'}, 
-	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia/'}  
+	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia/'}
+	                    
 	                    ]  
 	            },
 	            
@@ -90,7 +91,8 @@ $(function() {
 	                label: '<B>Mapa Geológico <br> de Colombia 2015</B>',  
 	                data: '',  
 	                children:[  
-	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia_2015/'}  
+	                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Geologico_Colombia_2015/'},
+	                    {label:'Visor Geográfico (JavaScript)',data: 'http://srvags.sgc.gov.co/JSViewer/Mapa_Geologico_colombiano_2015/'}
 	                    ]  
 	            },
 	            {  
@@ -320,7 +322,7 @@ $(function() {
 		                data: '',  
 		                children:[  
 							
-		                    {label:'Enlace a pagina web',data: 'http://zafiro.sgc.gov.co/simma/default.aspx'}  
+		                    {label:'Enlace a pagina web',data: 'http://simma.sgc.gov.co/'}  
 		                    ]  
 		            },
 		            
@@ -423,7 +425,9 @@ $(function() {
 		                label: '<B>Inventario Muestras Litoteca</B>',  
 		                data: '',  
 		                children:[  
-		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Inventario_Muestras_Litoteca/'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Inventario_Muestras_Litoteca/'},
+		                    {label:'Visor Geográfico (JavaScript)',data: 'http://srvags.sgc.gov.co/JSViewer/Inventario_Muestras_Litoteca/'},
+		                    
 		                    ]  
 		            },
 		            
