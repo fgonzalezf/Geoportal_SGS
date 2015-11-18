@@ -784,6 +784,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ <!-- Presentaciones page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.Presentaciones.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/Presentaciones.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  <!-- description page -->
  	<navigation-rule>
  		<navigation-case>

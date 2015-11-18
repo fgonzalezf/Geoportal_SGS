@@ -453,6 +453,7 @@ $(function() {
 		                children:[  
 						    {label:'Manuales',data:'/catalog/quicklink/manualesPoliticas.page' },
 						    {label:'Políticas',data:'/catalog/quicklink/Politicas.page' },
+						    {label:'Presentaciones',data:'/catalog/quicklink/Presentaciones.page' },
 		                                
 		                    ]  
 		            },

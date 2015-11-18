@@ -14,17 +14,23 @@
      
          ],
          datasource: [
-             {'Nombre':'Manual de Información','Descripción': 'Manual de suministro y entrega de información geológica', 'Archivo':'Manual_Informacion.pdf'},
-             
-         ],
-         selectionMode: 'single',
-         rowSelect: function(event, data) {
-        	 if (data.Nombre == "Manual de Información")
-        		 {
-        		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Manuales/MANUAL_INFORMACION_V1.pdf');
-        		 }
-        	 
-         },
+              {'Nombre':'Manual de Información','Descripción': 'Manual de suministro y entrega de información geológica', 'Archivo':'Manual_Informacion.pdf'},
+         	  {'Nombre':'Guia Buenas Practicas','Descripción': 'Gestión del patrimonio geológico y paleontológico de Colombia', 'Archivo':'MANUAL.pdf'},
+                      
+              ],
+                  selectionMode: 'single',
+                  rowSelect: function(event, data) 
+                   {
+                 	 if (data.Nombre == "Manual de Información")
+                 		 {
+                 		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Manuales/MANUAL_INFORMACION_V1.pdf');
+                 		 }
+         			 else if (data.Nombre == "Guia Buenas Practicas")
+                 		 {
+                 		 	window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Manuales/MANUAL_BUENAS_PRACTICAS_Nov-2015.pdf');
+                 		 }
+                 	 
+                   },
         
      });
  
