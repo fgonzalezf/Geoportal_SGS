@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<!-- See Enhanced Search Widget XML Configuration.pdf for detailed explanation -->
+<configuration>
+    <layers>
+        <layer>
+            <token/>
+            <definitionexpression/>
+            <enableexport>true</enableexport>
+            <name>Municipio</name>
+            <url>http://srvarcgisdes.sgc.gov.co/arcgis/rest/services/Zonificacion_Sismica_Intensidades_Esperadas/Zonificacion_Sismica_Intensidades_Esperadas/MapServer/0</url>
+            <expressions>
+                <expression alias="Municipio"  isvaluerequired="true">
+                    <values>
+                        <value prompt="Ejemplo: Chía" uniquevalsfromfield="MUNICIPIO" >MUNICIPIO = '[value]'</value>
+                    </values>
+                </expression>
+                
+            </expressions>
+            <graphicalsearchlabel>Herramientas Gráficas de Selección</graphicalsearchlabel>
+            <spatialsearchlayer>false</spatialsearchlayer>
+            <titlefield>MUNI_NOMBR</titlefield>
+            <fields all="false">
+                <field name="CODIGO_DANE" alias="Código Municipio" gridfield="true"/>
+				<field name="DEPARTAMENTO" alias="Nombre Departamento" gridfield="true"/>	
+                <field name="MUNICIPIO" alias="Nombre Municipio" gridfield="true"/>
+				<field name="ZONAS_AMENAZA_SISMICA_NSR_10" alias="Zona Amenaza Sismica NSR_10" gridfield="true"/>
+                <field name="AREA_KM" alias="Area Kilometros" gridfield="true"/>					
+            </fields>
+            <links>
+            </links>
+            <zoomscale usegeometry="true" zoompercent="1.6"/>
+            <autoopendatagrid>true</autoopendatagrid>
+            <relates/>
+            <queryattachments>true</queryattachments>
+        </layer>
+		<layer>
+            <token/>
+            <definitionexpression/>
+            <enableexport>true</enableexport>
+            <name>Departamento</name>
+            <url>http://srvarcgisdes.sgc.gov.co/arcgis/rest/services/Zonificacion_Sismica_Intensidades_Esperadas/Zonificacion_Sismica_Intensidades_Esperadas/MapServer/8</url>
+            <expressions>
+                <expression alias="Departamento"  isvaluerequired="true">
+                    <values>
+                        <value prompt="Ejemplo: Cundinamarca" uniquevalsfromfield="MGDEP_NOMBR_GEOG" >MGDEP_NOMBR_GEOG = '[value]'</value>
+                    </values>
+                </expression>
+                
+            </expressions>
+            <graphicalsearchlabel>Herramientas Gráficas de Selección</graphicalsearchlabel>
+            <spatialsearchlayer>false</spatialsearchlayer>
+            <titlefield>MGDEP_NOMBR_GEOG</titlefield>
+            <fields all="false">
+				<field name="MGDEP_NOMBR_GEOG" alias="Nombre Departamento" gridfield="true"/>			
+            </fields>
+            <links>
+            </links>
+            <zoomscale usegeometry="true" zoompercent="1.6"/>
+            <autoopendatagrid>true</autoopendatagrid>
+            <relates/>
+            <queryattachments>true</queryattachments>
+        </layer>
+    </layers>
+    <spatialrelationships>
+	   <!--
+        <spatialrelationship>
+            <name>esriSpatialRelContains</name>
+            <label>Contenido en</label>
+        </spatialrelationship>
+		
+		 
+        <spatialrelationship>
+            <name>esriSpatialRelIntersects</name>
+            <label>Intersectado por</label>
+        </spatialrelationship>
+		-->
+        <spatialrelationship>
+            <name>esriSpatialRelEnvelopeIntersects</name>
+            <label>Intersectado por extensión</label>
+        </spatialrelationship>
+		
+    </spatialrelationships>
+    <bufferunits>
+        <bufferunit>
+            <name>UNIT_FOOT</name>
+            <label>Pies</label>
+        </bufferunit>
+        <bufferunit selected="true">
+            <name>UNIT_STATUTE_MILE</name>
+            <label>Millas</label>
+        </bufferunit>
+        <bufferunit>
+            <name>UNIT_METER</name>
+            <label>Metros</label>
+        </bufferunit>
+        <bufferunit>
+            <name>UNIT_KILOMETER</name>
+            <label>Kilómetros</label>
+        </bufferunit>
+    </bufferunits>
+    <buffervalue>0</buffervalue>
+    <printdatagrid>
+        <addheadertoeachpage>true</addheadertoeachpage>
+        <columnheaderbgcolor>0xa7a7a7</columnheaderbgcolor>
+        <columnheaderfontcolor>0x000000</columnheaderfontcolor>
+        <footer>
+            <pageoftext>Page ## of ##</pageoftext>
+            <includeprintdate format="MM-DD-YYYY L:NN A">true</includeprintdate>
+            <disclaimer/>
+        </footer>
+    </printdatagrid>
+    <removeserchlayersminmaxscale>false</removeserchlayersminmaxscale>
+    <keepgraphicalsearchenabled>true</keepgraphicalsearchenabled>
+    <autozoomtoresults>true</autozoomtoresults>
+    <popupsdisabled>false</popupsdisabled>
+    <enabledatagridinteractionwithwidget>true</enabledatagridinteractionwithwidget>
+    <enableaddtollerance>false</enableaddtollerance>
+    <toleranceforpointgraphicalselection>6</toleranceforpointgraphicalselection>
+    <tolerancebydefault>false</tolerancebydefault>
+    <spatialreference>102003</spatialreference>
+    <zoomscale>2400</zoomscale>
+    <csvseparator>,</csvseparator>
+    <textqualifier>"</textqualifier>
+    <disablebuttons/>
+    <defaultselectionoption>textInput</defaultselectionoption>
+    <enabledrawgraphicbutton>true</enabledrawgraphicbutton>
+    <enablebuffergraphicbutton>true</enablebuffergraphicbutton>
+    <enablelocategraphicbutton>true</enablelocategraphicbutton>
+    <enablemultigraphicssearch>false</enablemultigraphicssearch>
+    <enableincludetextsearch>false</enableincludetextsearch>
+    <enableaddtollerance>true</enableaddtollerance>
+    <enablegraphicsbuffering>true</enablegraphicsbuffering>
+    <selectedgraphicaltool/>
+    <multipartgraphicsearch>false</multipartgraphicsearch>
+    <floatorfixed>fixed</floatorfixed>
+    <relatetooltip>Show Relates</relatetooltip>
+    <relateicon>widgets/eSearch/assets/images/i_relate.png</relateicon>
+    <subselection color="0xfbfe0a" linewidth="4" alpha="0.8"/>
+    <keepbufferaftersearch>false</keepbufferaftersearch>
+    <labels>
+        <urlsearcherrormessage>Seleccion de parametros incorrectos URL</urlsearcherrormessage>
+        <includetextquery>Incluir el Texto en la selección</includetextquery>
+        <includetextquerywarn>Debe ser la misma capa de búsqueda en ambas páginas gráficas y de texto de búsqueda.</includetextquerywarn>
+        <buffergrapicprops>Propiedades del Buffer Gráfico</buffergrapicprops>
+        <bufferusergraphics>Distancia de selección</bufferusergraphics>
+        <norelatesfound>No hay registros para mostrar:</norelatesfound>
+        <norelatesfoundalerttitle>No hay Resultados</norelatesfoundalerttitle>
+        <addtolerance>Agregue la Tolerancia de Selección</addtolerance>
+        <existingdrawgraphicslabel>Use Existing Enhanced Draw Widget Graphics</existingdrawgraphicslabel>
+        <existinglocategraphicslabel>Use Existing Enhanced Locate Widget Graphics</existinglocategraphicslabel>
+        <existingbuffergraphicslabel>Use Existing Point Buffer Widget Graphics</existingbuffergraphicslabel>
+        <graphicalsearchlabel>Selección Gráfica</graphicalsearchlabel>
+        <textsearchlabel>Texto de Busqueda</textsearchlabel>
+        <resultslabel>Resultados</resultslabel>
+        <layerlabel>Búsqueda</layerlabel>
+        <layerfieldlabel>Búsqueda por:</layerfieldlabel>
+        <nolayerlabel>No se definió la capa de Busqueda.</nolayerlabel>
+        <submitlabel>Buscar</submitlabel>
+        <pointlabel>Seleccionar por Punto</pointlabel>
+        <linelabel>Seleccionar por Línea</linelabel>
+        <rectanglelabel>Seleccionar por Rectángulo</rectanglelabel>
+        <polygonlabel>Seleccionar por Polígono</polygonlabel>
+        <clearlabel>Borrar</clearlabel>
+        <loadinglabel>Cargando...</loadinglabel>
+        <selectionlabel>Registros Seleccionados:</selectionlabel>
+        <gridresultslabel>Mostrar resultados en Tabla</gridresultslabel>
+        <csvdefaultname>Registros Seleccionados</csvdefaultname>
+        <relatescsvdefaultname>Registros Relacionados</relatescsvdefaultname>
+        <exportbtnlabel>Exportar..</exportbtnlabel>
+        <export2csvoptionlabel>Exportar a CSV...</export2csvoptionlabel>
+        <export2txtoptionlabel>Exportar a Txt...</export2txtoptionlabel>
+        <bufferlabel>Aplicar distancia de Búsqueda:</bufferlabel>
+        <spatialsearchlabel>Búsqueda Espacial</spatialsearchlabel>
+        <applybufferlabel>Aplicar Distancia</applybufferlabel>
+        <searchlayerlabel>Buscar entidades en:</searchlayerlabel>
+        <enablemultipartsearch>enable multi-part graphics</enablemultipartsearch>
+        <zoomalllabel>Zoom</zoomalllabel>
+        <zoomalltip>Acercar a todos los resultados</zoomalltip>
+        <bufferalpha>Opacidad</bufferalpha>
+        <buffercolor>Color</buffercolor>
+        <nobuffercolor>Sin color</nobuffercolor>
+        <bufferoutlinecolor>Color Línea</bufferoutlinecolor>
+        <nobufferoutlinecolor>Sin Color Línea</nobufferoutlinecolor>
+        <bufferoutlinewidth>Ancho Línea</bufferoutlinewidth>
+        <configbuffergra>Configure las propiedades gráficas del buffer...</configbuffergra>
+        <required>.</required>
+        <requiredtooltip>Este Campo es Requerido para activar el Boton de Buscar</requiredtooltip>
+        <selectmethodtip>Haga clic para cambiar el método de selección</selectmethodtip>
+        <newselectionmethodtip>Crear nueva selección</newselectionmethodtip>
+        <addselectionmethodtip>Añadir a la selección actual</addselectionmethodtip>
+        <removeselectionmethodtip>Eliminar de la selección actual</removeselectionmethodtip>
+        <pagingqueryerrormsg>Cuatro intentos fallidos se realizaron para obtener valores únicos</pagingqueryerrormsg>
+        <intersectmessage>No hay resultado para cruzarse , por favor, hacer una búsqueda gráfica o de texto primero.</intersectmessage>
+        <edrawgraphicsmessage>No hay gráficos disponibles</edrawgraphicsmessage>
+        <nodatagridmessage>No hay layer configurados para la tabla de resultados</nodatagridmessage>
+        <buffermessage>No hay resultado para el buffer , por favor, hacer una búsqueda gráfica o de texto primero.</buffermessage>
+        <clearbufferlabel>Limpiar Buffer</clearbufferlabel>
+        <alloptiontext>Todas</alloptiontext>
+        <spatialchoicemsg>¿Quieres utilizar los gráficos de búfer o Selección por Gráficos?</spatialchoicemsg>
+        <spatialchoicetitle>Elegir</spatialchoicetitle>
+        <buffergraphicstext>Buffer Gráficos</buffergraphicstext>
+        <selectiongraphicstext>Gráficos de selección</selectiongraphicstext>
+    </labels>
+    <symbols>
+        <simplefillsymbol color="0x00ffff" alpha="0.5">
+            <outline color="0xff0000" alpha="0.8" width="2"/>
+        </simplefillsymbol>
+        <picturemarkersymbol url="assets/images/libro_seleccion.png" height="25" width="25" xoffset="0" yoffset="0"/>
+        <simplelinesymbol color="0xff0000" alpha="0.8" width="2"/>
+    </symbols>
+</configuration>

@@ -792,6 +792,22 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ <!-- amenazaMasa page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.amenazaMasa.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/amenazaMasa.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
+ <!-- PresentacionesDiaSIG page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.PresentacionesDiaSIG.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/PresentacionesDiaSIG.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  <!-- description page -->
  	<navigation-rule>
  		<navigation-case>
@@ -800,6 +816,8 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ 
+ 
   
   <application>
     <locale-config>

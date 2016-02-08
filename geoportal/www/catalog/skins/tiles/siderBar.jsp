@@ -288,7 +288,8 @@ $(function() {
 		                data: '',  
 		                children:[  
 							 
-		                    {label:'Visor Geográfico',data: 'http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/'},  
+		                    {label:'Visor Geográfico',data: 'http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/'}, 
+		                    {label:'Mapa de Amenazas', data:'/catalog/quicklink/amenazaMasa.page'},     
 		                    ]  
 		            },
 		            {  
@@ -316,9 +317,17 @@ $(function() {
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Intensidad_Maxima_Observada_Colombia/'},  
 		                    ]  
 		            },
+		            {  
+		                label: '<B>Mapa de Zonificación Sismica <br> Según la Intensidad Esperada</B>',  
+		                data: '',  
+		                children:[  
+							  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Zonificacion_Sismica_Intensidades_Esperaradas/'},  
+		                    ]  
+		            },
 		            
 		            {  
-		                label: '<B>Movimientos por <br> Remoción en Masa</B>',  
+		                label: '<B>Sistema de Información <br> de Movimientos en Masa</B>',  
 		                data: '',  
 		                children:[  
 							
@@ -380,6 +389,18 @@ $(function() {
 		        	window.open(ui.data);
 					return false;
 		        	}
+		        	else if (ui.data.indexOf("amenazaMasa") !=-1 ){
+		        		switch (ui.data) {
+		        	    
+		        	    case "/catalog/quicklink/amenazaMasa.page":
+		        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+		        	    	window.location.replace(urlf2);
+		        	        break;
+
+		        		}
+		        		
+		       
+		        	}		        	
 		        	else if(ui.data!="")  {
 		        		var url= document.URL;
 		        		var corte = url.split("/");
@@ -388,6 +409,7 @@ $(function() {
 		        		window.open(ruta);
 						return false;
 		        	}
+		        	
 		        	else
 		        	{
 		        		$('#Geoamenazas').puitree('expandNode',ui.node);
@@ -453,8 +475,16 @@ $(function() {
 		                children:[  
 						    {label:'Manuales',data:'/catalog/quicklink/manualesPoliticas.page' },
 						    {label:'Políticas',data:'/catalog/quicklink/Politicas.page' },
-						    {label:'Presentaciones',data:'/catalog/quicklink/Presentaciones.page' },
+						   
 		                                
+		                    ]  
+		            },
+		            {  
+		                label: '<B>Presentaciones</B>',  
+		                data: '',  
+		                children:[  
+		                          {label:'Presentaciones IGME',data:'/catalog/quicklink/Presentaciones.page' },    
+		                          {label:'Presentaciones Dia SIG 2015',data:'/catalog/quicklink/PresentacionesDiaSIG.page' },
 		                    ]  
 		            },
 		            {  
@@ -481,6 +511,7 @@ $(function() {
 			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
 			        	    	window.location.replace(urlf2);
 			        	        break;
+			        	    
 							
 			        		}
 			        		

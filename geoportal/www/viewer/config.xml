@@ -119,7 +119,7 @@
         <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="Imprimir" icon="assets/images/i_print.png"/>
         <widget url="widgets/FindData/FindDataWidget.swf" config="widgets/FindData/FindDataWidget.xml" label="Búsqueda En Geoportal" icon="assets/images/i_search.png" left="100" top="50" preload="minimized" width="450"/>
         <widget url="widgets/Bookmark/BookmarkWidget.swf" config="widgets/Bookmark/BookmarkWidget_1.xml" label="Marcadores" icon="assets/images/i_bookmark.png"/>
-        <widget url="widgets/Search/SearchWidget.swf" config="widgets/Search/SearchWidget_3.xml" label="Buscar" icon="assets/images/idisk_globe.png"/>
+        <widget url="widgets/eSearch/eSearchWidget.swf" config="widgets/eSearch/eSearchWidget.xml" label="Búsqueda" icon="assets/images/idisk_globe.png" preload="collapsed"/> 
          <widget label="Perfil de Elevación" top="350" bottom="20" icon="widgets/ElevationProfile/images/i_epwidget.png" url="widgets/ElevationProfile/ElevationProfileWidget.swf" config="widgets/ElevationProfile/ElevationProfileWidget.xml"/>
          <widget label="Cargar Servicio" icon="assets/images/globe.png" config="widgets/LoadService/LoadService.xml" url="widgets/LoadService/LoadService.swf"/>
                 

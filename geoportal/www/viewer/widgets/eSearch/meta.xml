@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" ?>
+<configuration>
+    <label>Enhanced Search Widget</label>
+    <widgetversion>3.5.4</widgetversion>
+    <icon>assets/images/i_search.png</icon>
+    <openbydefault>true</openbydefault>
+    <description>This widget provides an enhanced version of the Search Widget for the Flex Viewer. This enhanced version allows you to open a datagrid from the Search Widget that has its own specified fields that are independent of the fields that are specified for the Search Widget. The datagrid is also an enhanced datagrid that automatically re-sizes the columns to fit the data inside of them and allows for hyperlink fields to be specified. The datagrid is fully integrated with the Search Widget's results so when you select a row in the datagrid the same record is selected in the Search Widget's results and vice versa. The datagrid is in a floating container so it can be moved to anywhere on the screen, but is not re-sizable.</description>
+    <helpurl>http://www.arcgis.com/home/item.html?id=5d4995ccdb99429185dfd8d8fb2a513e</helpurl>
+</configuration>

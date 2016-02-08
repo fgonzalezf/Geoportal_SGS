@@ -78,7 +78,7 @@ Para ser consumidos desde software GIS
 
 <B>Mapa de Intensidades Máximas Observadas</B>
 <br>
-<p style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Intensidad_Maxima_Observada_Colombia/Mapa_Intensidades_Maximas_Colombia/MapServer/WMSServer</p>
+<p style= "font-size:12px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Intensidad_Maxima_Observada_Colombia/Mapa_Intensidades_Maximas_Colombia/MapServer/WMSServer</p>
 <br>
 
 
@@ -103,7 +103,7 @@ Para ser consumidos desde software GIS
 
 <B>Mapa Metalogénico Colombia</B>
 <br>
-<p style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WMSServer</p>
+<p style= "font-size:12px">http://srvags.sgc.gov.co/arcgis/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer/WMSServer</p>
 <br>
 
 
@@ -141,7 +141,7 @@ Para ser consumidos desde software GIS
 <B>Catalogo de Dataciones Radiometricas</B>
 <br>
 
-<p style= "font-size:13px">http://srvags.sgc.gov.co/arcgis/services/Catalogo_Dataciones_Radiometricas_Colombia/Catalogo_Dataciones_Radiometricas_Colombia_2015/MapServer/WFSServer</p>
+<p style= "font-size:11.5px">http://srvags.sgc.gov.co/arcgis/services/Catalogo_Dataciones_Radiometricas_Colombia/Catalogo_Dataciones_Radiometricas_Colombia_2015/MapServer/WFSServer</p>
 <br>
 <B>Estaciones GNSS Servicio Geológico Colombiano</B>
 <br>
