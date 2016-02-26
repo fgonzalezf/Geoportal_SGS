@@ -289,7 +289,7 @@ $(function() {
 		                children:[  
 							 
 		                    {label:'Visor Geográfico',data: 'http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/'}, 
-		                    {label:'Mapa de Amenazas', data:'/catalog/quicklink/amenazaMasa.page'},     
+		                    {label:'Shapes de Amenaza', data:'/catalog/quicklink/amenazaMasa.page'},     
 		                    ]  
 		            },
 		            {  
@@ -310,7 +310,7 @@ $(function() {
 		            },
 		            
 		            {  
-		                label: '<B>Mapa de Intensidades <br> Máximas Observadas</B>',  
+		                label: '<B>Mapas Sísmicos</B>',  
 		                data: '',  
 		                children:[  
 							  
@@ -466,7 +466,7 @@ $(function() {
 		                data: '',  
 		                children:[    
 		                    {label:'Enlace a pagina Web',data: 'http://aplicaciones1.sgc.gov.co/sicat/html/ConsultaBasica.aspx'}, 
-		                    {label:'Registro de activos de <br> información',data: '/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf'},
+		                    {label:'Registro de activos de <br> información',data: 'http://srvags.sgc.gov.co/Archivos_Geoportal/Politicas/RegistrodeactivosSGC.xlsx'},
 		                    ]  
 		            },
 		            {  
