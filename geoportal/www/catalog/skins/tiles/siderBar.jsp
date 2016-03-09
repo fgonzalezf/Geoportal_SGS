@@ -23,9 +23,7 @@ Submits from when on enter.
 @param form The form to be submitted.
 **/
 $(function() { 
-	
 	$('#multiple').puiaccordion();  
-	 
 	$('#Basicas').puitree({  
 	        animate: true,  
 	        selectionMode: 'single',  
@@ -275,21 +273,21 @@ $(function() {
 						        ]  
 					},
 		           
-		            {  
+		            /*{  
 		                label: '<B>Mapa de Amenaza <br> Sísmica</B>',  
 		                data: '',  
 		                children:[  
 							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaNacionalAmenazaSismica.pdf'},   
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Amenaza_Sismica/'},  
 		                    ]  
-		            },
+		            },*/
 		            {  
 		                label: '<B>Mapa de Amenaza por <br> Movimientos en Masa </B>',  
 		                data: '',  
 		                children:[  
 							 
 		                    {label:'Visor Geográfico',data: 'http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/'}, 
-		                    {label:'Shapes de Amenaza', data:'/catalog/quicklink/amenazaMasa.page'},     
+		                    {label:'Imágenes de Amenaza', data:'/catalog/quicklink/amenazaMasa.page'},     
 		                    ]  
 		            },
 		            {  
@@ -310,21 +308,21 @@ $(function() {
 		            },
 		            
 		            {  
-		                label: '<B>Mapas Sísmicos</B>',  
+		                label: '<B>Mapa Sísmicos</B>',  
 		                data: '',  
 		                children:[  
 							  
-		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Intensidad_Maxima_Observada_Colombia/'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/'},  
 		                    ]  
 		            },
-		            {  
+		            /*{  
 		                label: '<B>Mapa de Zonificación Sismica <br> Según la Intensidad Esperada</B>',  
 		                data: '',  
 		                children:[  
 							  
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Zonificacion_Sismica_Intensidades_Esperaradas/'},  
 		                    ]  
-		            },
+		            },*/
 		            
 		            {  
 		                label: '<B>Sistema de Información <br> de Movimientos en Masa</B>',  
@@ -547,22 +545,84 @@ $(function() {
 		        	}
 	        });
 	        
+	        $('#Enlaces').puitree({  
+		        animate: true,  
+		        selectionMode: 'single',  
+		        nodes: [  
+		                
+					{  
+    							label: '<B>Geoportal MinMinas</B>',  
+    							data: 'http://geoportalsme.minminas.gov.co/geoportalsme/web/inicio',  
+    							
+					},
+					{  
+						label: '<B>Geoportal UPME</B>',  
+						data: 'http://sig.simec.gov.co/GeoPortal/Carrusel/Home',  
+						
+					},
+					{  
+						label: '<B>Geoportal ANH</B>',  
+						data: 'http://geovisor.anh.gov.co/',  
+						
+					},
+		           
+		            
+		           
+		            
+		        ],  
+					nodeSelect: function(event, ui) { 
+		        	
+						if (ui.data.indexOf("bases") !=-1 || ui.data.indexOf("estadisticas") !=-1){
+			        		switch (ui.data) {
+			        	    case "/catalog/quicklink/basesDatosPublicacion.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    case "/catalog/quicklink/estadisticas.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    
+							
+			        		}
+			        		
+			       
+			        	}
+						else if(ui.data.indexOf("/PDF/") !=-1)  {
+							switch (ui.data) {
+								case "/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							case "/catalog/PDF/EstadoCartografia.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							}
+							
+						}
+		        	else if(ui.data.indexOf("http://") !=-1)  {
+		        		
+		        		window.open(ui.data);
+		        	}
+		        	else if(ui.data!="")  {
+		        		
+		        		var urlf='${pageContext.request.contextPath}'+ui.data;
+		        		window.location.replace(urlf);
+		        	}
+		        	else
+		        	{
+		        		 $('#Informacion').puitree('expandNode',ui.node);
+		        	}
+		        		
+		        	}
+	        });
+	        
 	       
 });
  
 </script>
-         <!--   <ul class="nav">   
-           <ul class="nav">
-      			<li><a id="a1" href="http://srvags.sgc.gov.co/Flexviewer/Geomorfodinamica/" target="_blank">Información Geomorfodinámica de los Litorales Colombianos</a></li>
-      			<li><a id="a1" href="http://srvags.sgc.gov.co/Flexviewer/Anomalia_Geoquimica/" target="_blank">Mapa Anomalia Geoquímica</a></li>
-      			<li><a id="a1" href="http://aplicaciones7.sgc.gov.co/ESTADO_CARTOGRAFIA_MAYO20/default.aspx" target="_blank">Estado Cartográfia Geológica</a></li>
-      			<li><a id="a1" href="http://aplicaciones7.sgc.gov.co/MapaGeologicoMGC/default.aspx" target="_blank">Mapa Geológico de colombia</a></li>
-      			<li><a id="a1" href="http://aplicaciones7.sgc.gov.co/facetas/" target="_blank">Puntos de Muestreo Geoquímico</a></li>
-      			<li><a id="a1" href="http://aplicaciones7.sgc.gov.co/MÁPA_NACIONAL_AMENAZA_SISMICA/default.aspx" target="_blank">Mapa de Amenaza Sísmica</a></li>
-      			<li><a id="a1" href="http://zafiro.sgc.gov.co/simma/default.aspx" target="_blank">Movimientos por Remoción en Masa</a></li>
-      			<li><a id="a1" href="http://agata.ingeominas.gov.co:9090/SismicidadHistorica/" target="_blank">Sismicidad Histórica de Colombia</a></li>
-    		</ul>
-      -->
+         
 <div id="multiple">  
     <h3>Geociencias Básicas</h3>  
     <div style="padding: 0.3em; font-size: 0.8em" >
@@ -605,8 +665,23 @@ $(function() {
     	<div id="Informacion" style=" width: 210px">   	
     	</div>     
     </div>  
+    
+     <h3>Enlaces Relacionados</h3>  
+    <div style="padding: 0.3em ; font-size: 0.8em">
+       
+    	
+    	<div id="Enlaces" style=" width: 210px">   	
+    	</div>     
+    </div>  
         
-</div>  
+</div> 
+<br>
+<br>
+<br>
+<br>
+
+
+
      
     
      

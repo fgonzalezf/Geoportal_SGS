@@ -43,12 +43,13 @@
 </div>
 <h:form id="frmTertiaryNavigation">
     
-	<h:commandLink 
-        id="identityFeedback"
-        action="catalog.identity.feedback" 
-        styleClass="#{PageContext.tabStyleMap['catalog.identity.feedback']}"
-        value="#{gptMsg['catalog.identity.feedback.menuCaption']}" /> 
-    
+    <h:outputLink id="identityFeedback"  
+    			  target="_blank" 
+    			  value="http://www.sgc.gov.co/Nosotros/Contactenos.aspx" 
+    			  styleClass="#{PageContext.tabStyleMap['catalog.identity.feedback']}">
+    	<h:outputText value="Contáctenos" />
+	</h:outputLink>
+	
 	<h:commandLink 
         id="contentAbout"
         action="catalog.content.about" 

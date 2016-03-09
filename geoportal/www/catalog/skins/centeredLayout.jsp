@@ -21,7 +21,9 @@
 <%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 <%@taglib prefix="tiles" uri="http://struts.apache.org/tags-tiles"%>
 <%@taglib uri="http://www.esri.com/tags-gpt" prefix="gpt"%>
- 
+
+
+
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -71,8 +73,10 @@
 					<tr>
 						<td id ="Barra">
 							<div id="gptSiderBar">
-								<tiles:insert attribute="siderBar" flush="false" />
+								<tiles:insert attribute="siderBar" flush="false" />														 
 							</div>
+							
+							
 						</td>
 						<td id= "cuerpo" >
 							<div style="clear: both"></div>

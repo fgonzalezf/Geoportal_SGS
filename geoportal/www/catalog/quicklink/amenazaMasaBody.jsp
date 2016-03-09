@@ -1,6 +1,7 @@
 <% // quicklinkBody.jsp - Links page (JSF body) %>
 <script type="text/javascript">
  $(function() {
+	 $('#default').puipanel();
 	 
 	 $('#dlg').puidialog({
 	        showEffect: 'fade',
@@ -732,6 +733,17 @@
  
  </script>
 
+
+ <div id="default" style="margin-bottom:20px" title="Archivo integrado nacional de susceptibilidad y amenaza relativa por movimientos en masa">
+    <center>
+    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amenaza_Nacional.zip' download>Archivo integrado nacional</a>
+    <br>
+    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondGenTermLicUso.pdf' download>Terminos y Condiciones de uso</a>
+     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondPropiedIntelectual.pdf' download>Terminos Propiedad Intelectual</a>
+     
+    </center>
+</div>
+
 <div id="tbllocal"></div>
 
 <div id="dlg" title="TÉRMINOS GENERALES Y CONDICIONES"> 
@@ -826,3 +838,4 @@ TÉRMINOS
 Acepto
 
  </div>
+ 

@@ -27,13 +27,13 @@
         - password: the password credential
         - encrypted: "true" or "false" (indicates if this password is encrypted) -->
     <mail
-        smtpHost="smtp.gmail.com"  
-        smtpPort="465" 
+        smtpHost="aspmx.l.google.com"  
+        smtpPort="" 
         siteEmailAddress="pachecofgf@gmail.com"
         emailAddressRegexp="^[a-zA-Z0-9,!#\$%&amp;'\*\+/=\?\^_`\{\|}~-]+(\.[a-zA-Z0-9,!#\$%&amp;'\*\+/=\?\^_`\{\|}~-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*$">
         <smtpAuth
-            username="pachecofgf@gmail.com"
-            password="maidenfg2357"
+            username="geoportalsgc@gmail.com"
+            password="administradorSGC#"
             encrypted="true"/>
     </mail>
 

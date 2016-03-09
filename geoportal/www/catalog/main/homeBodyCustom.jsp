@@ -211,6 +211,17 @@ $('#actualizaciones').puipanel();
         <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Atlas.jpg"%> />
         </a>           
         </li> 
+        
+        <li>
+        <div class="galleria">
+        		Visor Atlas Geológico de Colombia 2015
+        </div>  
+        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Atlas_Geologico_2015.jpg"%> alt="Visor Atlas Geológico de Colombia 2015"  title="Mapa Atlas Geológico de Colombia 2015 "/>      
+        <a href="http://srvags.sgc.gov.co/JSViewer/Atlas_Geologico_colombiano_2015/" target="_blank" id="Atlas_Geologico_2015">
+        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Atlas_Geologico_2015.jpg"%> />
+        </a>           
+        </li> 
+        
         <li>
         <div class="galleria">
         		Visor de Mapa Información Geomorfodinámica
@@ -361,12 +372,12 @@ $('#actualizaciones').puipanel();
         
         <li>
         <div class="galleria">
-        		Visor Mapa de Intensidades Máximas Observadas
+        		Visor Mapas Sísmicos
         </div> 
-        <a href="http://srvags.sgc.gov.co/Flexviewer/Mapa_Intensidad_Maxima_Observada_Colombia/" target="_blank" id="IntensidadesMaximas">
-        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/IntensidadesMaximasObservadas.jpg"%> alt="Visor Mapa de Intensidades Máximas Observadas" title="Visor Mapa de Intensidades Máximas Observadas"/>
+        <a href="http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/" target="_blank" id="MapasSismicos">
+        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Mapas_Sismicos.jpg"%> alt="Visor Mapas Sísmicos" title="Visor Mapas Sísmicos"/>
         </a>
-        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/IntensidadesMaximasObservadas.jpg"%> alt="Visor Mapa de Intensidades Máximas Observadas" title="Visor Mapa de Intensidades Máximas Observadas"/>
+        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Mapas_Sismicos.jpg"%> alt="Visor Mapas Sísmicos" title="Visor Mapas Sísmicos"/>
         </li>
         
         
