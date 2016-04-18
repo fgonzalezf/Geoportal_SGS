@@ -308,7 +308,7 @@ $(function() {
 		            },
 		            
 		            {  
-		                label: '<B>Mapa Sísmicos</B>',  
+		                label: '<B>Amenaza Sísmica</B>',  
 		                data: '',  
 		                children:[  
 							  

@@ -22,6 +22,7 @@
 	     	 {'Nombre':'Estadísticas','Descripcion': "Diciembre 2015", 'Archivo':'Estadística Diciembre Portal Geográfico Institucional.pdf'},
 	     	{'Nombre':'Estadísticas','Descripcion': "Enero 2016", 'Archivo':'Estadistica Enero Portal GeograficoInstitucional 2016.pdf'},
 	     	{'Nombre':'Estadísticas','Descripcion': "Febrero 2016", 'Archivo':'Estadistica Febrero Portal GeograficoInstitucional 2016.pdf'},
+	     	{'Nombre':'Estadísticas','Descripcion': "Marzo 2016", 'Archivo':'Estadistica Marzo Portal GeograficoInstitucional 2016.pdf'},
              
 	     	
          ],
@@ -63,7 +64,11 @@
               {
          		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaFebreroPortalGeograficoInstitucional_2016.pdf');
               }
-        	       	 
+              else if (data.Descripcion == 'Marzo 2016')
+              {
+         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaMarzoPortalGeograficoInstitucional_2016.pdf');
+              }
+        	 
          },
         
      });

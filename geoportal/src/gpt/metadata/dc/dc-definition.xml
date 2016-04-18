@@ -25,6 +25,7 @@
   <namespace prefix="dct" uri="http://purl.org/dc/terms/"/>
   <namespace prefix="ows" uri="http://www.opengis.net/ows"/>
   <namespace prefix="dcmiBox" uri="http://dublincore.org/documents/2000/07/11/dcmi-box/" />
+  <namespace prefix="oai_dc" uri="http://www.openarchives.org/OAI/2.0/" />
  
   <!-- schema interrogation -->
   <interrogation count="count(/rdf:RDF/rdf:Description/dc:title)"/>

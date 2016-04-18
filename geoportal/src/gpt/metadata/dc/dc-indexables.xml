@@ -22,6 +22,7 @@
   <namespace prefix="dc" uri="http://purl.org/dc/elements/1.1/"/>
   <namespace prefix="dct" uri="http://purl.org/dc/terms/"/>
   <namespace prefix="ows" uri="http://www.opengis.net/ows"/>
+  <namespace prefix="oai_dc" uri="http://www.openarchives.org/OAI/2.0/" />
 
   <property meaning="fileIdentifier" xpath="/rdf:RDF/rdf:Description/dc:identifier"/>
 

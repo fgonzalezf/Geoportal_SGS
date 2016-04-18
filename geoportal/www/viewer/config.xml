@@ -70,7 +70,7 @@
              <sublayer id="24" popupconfig="popups/PopUp_22.xml"/>
              
              </layer>
-            <layer type="dynamic" label="Mapa de Amenaza por Movimientos  en Masa" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Amenaza_MM/Mapa_Amenaza_MM/MapServer" visible="false">
+            <layer type="dynamic" label="Mapa de Amenaza por Movimientos  en Masa 100K" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Nacional_Amenaza_Mov_Masa_100K/Mapa_Nacional_Amenaza_Mov_Masa_Raster_100K/MapServer" visible="false">
                 <sublayer id="4" popupconfig="popups/PopUp_11.xml"/>
             </layer>
             <layer type="dynamic" label="Mapa Potencial Carbonífero Colombia" alpha="0.51" imageformat="png8" url="http://srvags.sgc.gov.co/arcgis/rest/services/Mapa_Potencial_Carbonifero_Colombia/Mapa_Potencial_Carbonifero_Colombia/MapServer" visible="false">
