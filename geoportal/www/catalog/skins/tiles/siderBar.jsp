@@ -329,7 +329,8 @@ $(function() {
 		                data: '',  
 		                children:[  
 							
-		                    {label:'Enlace a pagina web',data: 'http://simma.sgc.gov.co/'}  
+		                    {label:'Enlace a pagina web',data: 'http://simma.sgc.gov.co/'},
+		                    {label:'Estadísticas', data:'/catalog/quicklink/estadisticasSIMMA.page'},
 		                    ]  
 		            },
 		            
@@ -398,7 +399,19 @@ $(function() {
 		        		}
 		        		
 		       
-		        	}		        	
+		        	}
+		        	else if (ui.data.indexOf("estadisticasSIMMA") !=-1 ){
+		        		switch (ui.data) {
+		        	    
+		        	    case "/catalog/quicklink/estadisticasSIMMA.page":
+		        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+		        	    	window.location.replace(urlf2);
+		        	        break;
+
+		        		}
+		        		
+		       
+		        	}		 
 		        	else if(ui.data!="")  {
 		        		var url= document.URL;
 		        		var corte = url.split("/");

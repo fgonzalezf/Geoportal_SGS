@@ -760,6 +760,15 @@
  		</navigation-case>
  	</navigation-rule>
  	
+ <!-- estadisticas SIMMA page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.estadisticasSIMMA.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/estadisticasSIMMA.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
+ 	
  <!-- basesDatosPublicacion page -->
  	<navigation-rule>
  		<navigation-case>
