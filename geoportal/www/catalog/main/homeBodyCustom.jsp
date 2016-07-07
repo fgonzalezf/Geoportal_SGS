@@ -201,7 +201,7 @@ $('#actualizaciones').puipanel();
 <br>
 <div id="images">  
  
-    <ul> 
+        <ul> 
         <li>
         <div class="galleria">
         		Visor Atlas Geológico de Colombia 2007
@@ -244,7 +244,7 @@ $('#actualizaciones').puipanel();
         <div class="galleria">
          Visor de Mapa Amenaza Sísmica
         </div>  
-        <a href="http://srvags.sgc.gov.co/Flexviewer/Amenaza_Sismica/"  target="_blank" id="AmenazaSismica">
+        <a href="http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/"  target="_blank" id="AmenazaSismica">
        <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/AmenazaSismica.JPG"%> alt="Visor de Mapa Amenaza Sismica" title="Mapa Amenaza Sísmica"/>
         </a>
         <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/AmenazaSismica.JPG"%> alt="Visor de Mapa Amenaza Sismica" title="Mapa Amenaza Sísmica"/>
@@ -303,7 +303,7 @@ $('#actualizaciones').puipanel();
         <div class="galleria">
         		Visor Mapa de Amenaza Volcánica
         </div>  
-        <a href="http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Volcanica/" target="_blank" id="Amenaza_Volcanica">
+        <a href="http://srvags.sgc.gov.co/JSViewer/Amenaza_volcanica_JS/" target="_blank" id="Amenaza_Volcanica">
         <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/AmenazaVolcanica.jpg"%> alt="Visor Mapa de Amenaza Volcánica" title="Visor Mapa Amenaza Volcánica"/>
         </a>
         <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/AmenazaVolcanica.jpg"%> alt="Visor Mapa de Amenaza Volcánica" title="Visor Mapa de Amenaza Volcánica"/>
@@ -385,7 +385,7 @@ $('#actualizaciones').puipanel();
         
          
          </div> 
-    </ul>  
+    </ul> 
 </div>  
 <br>
 <!--

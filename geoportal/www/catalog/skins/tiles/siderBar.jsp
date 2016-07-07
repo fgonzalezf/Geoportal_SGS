@@ -262,6 +262,15 @@ $(function() {
 		        animate: true,  
 		        selectionMode: 'single',  
 		        nodes: [  
+		                
+					{  
+					    label: '<B>Amenaza Sísmica</B>',  
+					    data: '',  
+					    children:[  
+							  
+					        {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/'},  
+					        ]  
+					},
 		             
 		                
 					{  
@@ -295,7 +304,7 @@ $(function() {
 		                data: '',  
 		                children:[  
 							 
-		                    {label:'Visor Geográfico',data: 'http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Volcanica/'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_volcanica_JS/'},  
 		                    ]  
 		            },
 		            {  
@@ -307,14 +316,7 @@ $(function() {
 		                    ]  
 		            },
 		            
-		            {  
-		                label: '<B>Amenaza Sísmica</B>',  
-		                data: '',  
-		                children:[  
-							  
-		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/'},  
-		                    ]  
-		            },
+		            
 		            /*{  
 		                label: '<B>Mapa de Zonificación Sismica <br> Según la Intensidad Esperada</B>',  
 		                data: '',  
@@ -578,8 +580,13 @@ $(function() {
 						data: 'http://geovisor.anh.gov.co/',  
 						
 					},
+					{  
+						label: '<B>Dirección General Maritima <br> (DIMAR)</B>',  
+						data: 'https://cecoldo.dimar.mil.co/',  
+						
+					},
 		           
-		            
+					
 		           
 		            
 		        ],  
@@ -614,7 +621,7 @@ $(function() {
 							}
 							
 						}
-		        	else if(ui.data.indexOf("http://") !=-1)  {
+		        	else if(ui.data.indexOf("http://") !=-1||ui.data.indexOf("https://") !=-1)  {
 		        		
 		        		window.open(ui.data);
 		        	}
