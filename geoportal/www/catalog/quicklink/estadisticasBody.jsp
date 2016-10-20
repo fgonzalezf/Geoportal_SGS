@@ -20,12 +20,16 @@
              {'Nombre':'Estadísticas','Descripcion': "Octubre 2015", 'Archivo':'Estadística Octubre Portal Geográfico Institucional.pdf'},
              {'Nombre':'Estadísticas','Descripcion': "Noviembre 2015", 'Archivo':'Estadística Noviembre Portal Geográfico Institucional.pdf'},
 	     	 {'Nombre':'Estadísticas','Descripcion': "Diciembre 2015", 'Archivo':'Estadística Diciembre Portal Geográfico Institucional.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Enero 2016", 'Archivo':'Estadistica Enero Portal GeograficoInstitucional 2016.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Febrero 2016", 'Archivo':'Estadistica Febrero Portal GeograficoInstitucional 2016.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Marzo 2016", 'Archivo':'Estadistica Marzo Portal GeograficoInstitucional 2016.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Abril 2016", 'Archivo':'Estadistica Abril Portal GeograficoInstitucional 2016.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Mayo 2016", 'Archivo':'Estadistica Mayo Portal GeograficoInstitucional 2016.pdf'},
-	     	{'Nombre':'Estadísticas','Descripcion': "Junio 2016", 'Archivo':'Estadistica Junio Portal GeograficoInstitucional 2016.pdf'},
+	     	 {'Nombre':'Estadísticas','Descripcion': "Enero 2016", 'Archivo':'Estadistica Enero Portal GeograficoInstitucional 2016.pdf'},
+	     	 {'Nombre':'Estadísticas','Descripcion': "Febrero 2016", 'Archivo':'Estadistica Febrero Portal GeograficoInstitucional 2016.pdf'},
+	     	 {'Nombre':'Estadísticas','Descripcion': "Marzo 2016", 'Archivo':'Estadistica Marzo Portal GeograficoInstitucional 2016.pdf'},
+	     	 {'Nombre':'Estadísticas','Descripcion': "Abril 2016", 'Archivo':'Estadistica Abril Portal GeograficoInstitucional 2016.pdf'},
+			 {'Nombre':'Estadísticas','Descripcion': "Mayo 2016", 'Archivo':'Estadistica Mayo Portal GeograficoInstitucional 2016.pdf'},
+			 {'Nombre':'Estadísticas','Descripcion': "Junio 2016", 'Archivo':'Estadistica Junio Portal GeograficoInstitucional 2016.pdf'},
+			 {'Nombre':'Estadísticas','Descripcion': "Julio 2016", 'Archivo':'Estadistica Julio Portal GeograficoInstitucional_2016.pdf'},
+	     	 {'Nombre':'Estadísticas','Descripcion': "Agosto 2016", 'Archivo':'Estadistica Agosto Portal Geografico Institucional_2016.pdf'},
+			 {'Nombre':'Estadísticas','Descripcion': "Septiembre 2016", 'Archivo':'Estadistica Septiembre Portal Geografico Institucional_2016.pdf'},
+			
              
 	     	
          ],
@@ -75,15 +79,31 @@
               {
          		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaAbrilPortalGeograficoInstitucional_2016.pdf');
               }
-              else if (data.Descripcion == 'Mayo 2016')
+			  else if (data.Descripcion == 'Mayo 2016')
               {
          		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaMayoPortalGeograficoInstitucional_2016.pdf');
               }
-              else if (data.Descripcion == 'Junio 2016')
+			  else if (data.Descripcion == 'Junio 2016')
               {
          		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaJunioPortalGeograficoInstitucional_2016.pdf');
+              }
+			  else if (data.Descripcion == 'Julio 2016')
+              {
+         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaJulioPortalGeograficoInstitucional_2016.pdf');
+              }
+              else if (data.Descripcion == 'Agosto 2016')
+              {
+         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaAgostoPortalGeograficoInstitucional_2016.pdf');
               
               }
+			  else if (data.Descripcion == 'Septiembre 2016')
+              {
+         		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Estadisticas/EstadisticaSeptiembrePortalGeograficoInstitucional_2016.pdf');
+              
+              }
+			  
+			  
+        	 
          },
         
      });

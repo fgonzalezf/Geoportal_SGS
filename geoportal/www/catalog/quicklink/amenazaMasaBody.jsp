@@ -738,8 +738,8 @@
     <center>
     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amenaza_Nacional.zip' download>Archivo integrado nacional</a>
     <br>
-    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondGenTermLicUso.pdf' download>Terminos y Condiciones de uso</a>
-     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondPropiedIntelectual.pdf' download>Terminos Propiedad Intelectual</a>
+    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondGenTermLicUso.pdf' download>Términos y condiciones de uso. </a>
+     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondPropiedIntelectual.pdf' download>Términos de propiedad intelectual</a>
      
     </center>
 </div>

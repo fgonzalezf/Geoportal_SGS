@@ -342,7 +342,7 @@ $(function() {
 		                data: '',  
 		                children:[ 
                             {label:'Descripción', data:'/geoportalsgc/catalog/PDF/SismicidadHistoricadeColombia.pdf'},   
-		                    {label:'Enlace a pagina web',data:'http://agata.sgc.gov.co:9090/SismicidadHistorica/'}  
+		                    {label:'Enlace a pagina web',data:'http://sish.sgc.gov.co/visor/visor.html'}  
 		                    ]  
 		            }
 		            
