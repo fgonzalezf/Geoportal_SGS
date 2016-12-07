@@ -438,7 +438,14 @@ $(function() {
 	        $('#Informacion').puitree({  
 		        animate: true,  
 		        selectionMode: 'single',  
-		        nodes: [  
+		        nodes: [ 
+						{  
+							label: '<B>Actividades Desarrolladas</B>',  
+							data: '',  
+							children:[  
+								{label:'Actividades', data:'/catalog/quicklink/actividadesDesarrolladas.page'},     
+								 ]  
+						},
 		                
 					{  
     							label: '<B>Estadísticas Internas <br> Geoportal</B>',  

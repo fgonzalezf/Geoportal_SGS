@@ -759,6 +759,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ 	<!-- actividades Desarrolladas page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.actividadesDesarrolladas.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/actividadesDesarrolladas.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  	
  <!-- estadisticas SIMMA page -->
  	<navigation-rule>
