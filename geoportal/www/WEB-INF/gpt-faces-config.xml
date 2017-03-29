@@ -833,6 +833,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+<!-- Hidrogeologia page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.hidrogeologia.home</from-outcome>
+ 			<to-view-id>/catalog/description/hidrogeologia.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  
  
   

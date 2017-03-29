@@ -736,7 +736,7 @@
 
  <div id="default" style="margin-bottom:20px" title="Archivo integrado nacional de susceptibilidad y amenaza relativa por movimientos en masa">
     <center>
-    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amenaza_Nacional.zip' download>Archivo integrado nacional</a>
+    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amenaza_Nacional_2016.zip' download>Archivo integrado nacional</a>
     <br>
     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondGenTermLicUso.pdf' download>Términos y condiciones de uso. </a>
      <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondPropiedIntelectual.pdf' download>Términos de propiedad intelectual</a>
@@ -744,7 +744,7 @@
     </center>
 </div>
 
-<div id="tbllocal"></div>
+<!--  <div id="tbllocal"></div> -->
 
 <div id="dlg" title="TÉRMINOS GENERALES Y CONDICIONES"> 
 <B>Los siguientes términos aplican de manera general a todos los productos/ información/datos que un usuario adquiere del SERVICIO GEOLÓGICO COLOMBIANO</B>

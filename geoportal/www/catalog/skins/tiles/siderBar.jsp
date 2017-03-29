@@ -63,7 +63,14 @@ $(function() {
                         {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Geofisica/'}  
 	                    ]  
 	            },
-	            
+	            {  
+	                label: '<B>Hidrogeologia</B>',  
+	                data: '',  
+	                children:[  
+                        {label:'Visor Geográfico',data: ''},  
+                        {label:'Información Para Descarga',data: '/catalog/quicklink/hidrogeologia.page'}, 
+	                    ]  
+	            },
 	            {  
 	                label: '<B>Información <br> Geomorfodinámica <br> de los Litorales Colombianos</B>',  
 	                data: '',  
@@ -118,6 +125,7 @@ $(function() {
 	        	            
 	        	         });
 	        	        break;
+	        	    
 	        	    case "http://srvags.sgc.gov.co/Flexviewer/Geofisica/":
 	        	    	urlf='${pageContext.request.contextPath}'+"/catalog/main/contador.jsp";
 	        	    	var valor="10";
@@ -167,6 +175,18 @@ $(function() {
 	        	window.open(ui.data);
 				return false;
 	        	}
+	        	else if (ui.data.indexOf("hidrogeologia.page") !=-1 ){
+	        		switch (ui.data) {
+	        	    
+	        	    case "/catalog/quicklink/hidrogeologia.page":
+	        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+	        	    	window.location.replace(urlf2);
+	        	        break;
+
+	        		}
+	        		
+	       
+	        	}
 	        	else if(ui.data!="")  {
 	        		var url= document.URL;
 	        		var corte = url.split("/");
@@ -176,6 +196,7 @@ $(function() {
 	        		window.open(ruta);
 					return false;
 	        	}
+	        	
 	        	else
 	        	{
 	        		$('#Basicas').puitree('expandNode',ui.node);
@@ -590,6 +611,11 @@ $(function() {
 					{  
 						label: '<B>Dirección General Maritima <br> (DIMAR)</B>',  
 						data: 'https://cecoldo.dimar.mil.co/',  
+						
+					},
+					{  
+						label: '<B>Portal Geografico Nacional</B>',  
+						data: ' http://www.icde.org.co/servicios/portal-geografico-nacional',  
 						
 					},
 		           
