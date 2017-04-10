@@ -321,7 +321,7 @@ $('#actualizaciones').puipanel();
         
         <li>
         <div class="galleria">
-        		Visor Mapa Estaciones GNSS del SGC 2014
+        		Visor Mapa Estaciones GNSS del SGC 2016
         </div>  
         <a href="http://geoportal.sgc.gov.co/Flexviewer/Estaciones_GNSS/" target="_blank" id="Estaciones_GNSS">
         <img src=<%=request.getContextPath()+"/catalog/skins/themes/green/images/sliderImagines/Estaciones_GNSS.jpg"%> alt="Visor Mapa Estaciones GNSS del SGC 2014" title="Visor Mapa Estaciones GNSS del SGC 2014"/>

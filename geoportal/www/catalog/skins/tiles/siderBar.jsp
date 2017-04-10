@@ -295,7 +295,7 @@ $(function() {
 		             
 		                
 					{  
-						 label: '<B>Estaciones GNSS del SGC 2014 </B>',  
+						 label: '<B>Estaciones GNSS del SGC 2016 </B>',  
 						 data: '',  
 						 children:[  
 								 
@@ -588,6 +588,84 @@ $(function() {
 		        	}
 	        });
 	        
+	        $('#BIP').puitree({  
+		        animate: true,  
+		        selectionMode: 'single',  
+		        nodes: [  
+		                
+					{  
+    					label: '<B>EPIS</B>',  
+    				    data: 'http://www2.sgc.gov.co/EPIS/Epis2.aspx',  
+    							
+					},
+									
+					{  
+						label: '<B>Visor Geográfico EPIS</B>',  
+						data: 'http://srvagspru.sgc.gov.co/JSViewer/EPIS_V2/',
+						
+					},
+					
+		           
+					
+		           
+		            
+		        ],  
+					nodeSelect: function(event, ui) { 
+		        	
+						if (ui.data.indexOf("epis") !=-1 || ui.data.indexOf("litoteca") !=-1|| ui.data.indexOf("cintoteca") !=-1){
+			        		switch (ui.data) {
+			        	    case "/catalog/quicklink/epis.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    case "/catalog/quicklink/litoteca.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    case "/catalog/quicklink/cintoteca.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    case "/catalog/quicklink/cintoteca.page":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.location.replace(urlf2);
+			        	        break;
+			        	    
+							
+			        		}
+			        		
+			       
+			        	}
+						else if(ui.data.indexOf("/PDF/") !=-1)  {
+							switch (ui.data) {
+								case "/catalog/PDF/PRODUCTOS_GEOCIENTIFICOS_SGC_SICAT.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							case "/catalog/PDF/EstadoCartografia.pdf":
+			        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+			        	    	window.open(urlf2,"_blank");
+			        	        break;
+							}
+							
+						}
+		        	else if(ui.data.indexOf("http://") !=-1||ui.data.indexOf("https://") !=-1)  {
+		        		
+		        		window.open(ui.data);
+		        	}
+		        	else if(ui.data!="")  {
+		        		
+		        		var urlf='${pageContext.request.contextPath}'+ui.data;
+		        		window.location.replace(urlf);
+		        	}
+		        	else
+		        	{
+		        		 $('#Informacion').puitree('expandNode',ui.node);
+		        	}
+		        		
+		        	}
+	        });
+	        
 	        $('#Enlaces').puitree({  
 		        animate: true,  
 		        selectionMode: 'single',  
@@ -716,6 +794,13 @@ $(function() {
     	-->
     	
     	<div id="Informacion" style=" width: 210px">   	
+    	</div>     
+    </div> 
+    <h3>Información Petrolera</h3>  
+    <div style="padding: 0.3em ; font-size: 0.8em">
+       
+    	
+    	<div id="BIP" style=" width: 210px">   	
     	</div>     
     </div>  
     

@@ -841,6 +841,30 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+<!-- epis page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.epis.home</from-outcome>
+ 			<to-view-id>/catalog/description/epis.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
+<!-- cintoteca page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.cintoteca.home</from-outcome>
+ 			<to-view-id>/catalog/description/cintoteca.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
+<!-- litoteca page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.litoteca.home</from-outcome>
+ 			<to-view-id>/catalog/description/litoteca.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  
  
   
