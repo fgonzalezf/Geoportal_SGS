@@ -801,6 +801,14 @@
  			<redirect/>
  		</navigation-case>
  	</navigation-rule>
+ 	<!-- Atlas geoquimico page -->
+ 	<navigation-rule>
+ 		<navigation-case>
+ 			<from-outcome>catalog.atlasGeoquimico.home</from-outcome>
+ 			<to-view-id>/catalog/quicklink/atlasGeoquimico.jsp</to-view-id>
+ 			<redirect/>
+ 		</navigation-case>
+ 	</navigation-rule>
  <!-- Presentaciones page -->
  	<navigation-rule>
  		<navigation-case>

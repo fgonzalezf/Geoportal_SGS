@@ -235,13 +235,38 @@ $(function() {
 		            },
 		            **/
 		            {  
+		                label: '<B>Atlas Geofísico <br> de Colombia</B>',  
+		                data: '',  
+		                children:[  
+							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Potencial_Carbonifero_Colombia/'},  
+		                    ]  
+		            },
+		            {  
+		                label: '<B>Atlas Geoquímico <br> de Colombia</B>',  
+		                data: '',  
+		                children:[  
+							{label:'Descarga de Información', data:'/catalog/quicklink/atlasGeoquimico.page'},    
+		                    ]  
+		            },
+		            {  
 		                label: '<B>Mapa Carbonífero <br> de Colombia</B>',  
 		                data: '',  
 		                children:[  
 							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Potencial_Carbonifero_Colombia/'},  
 		                    ]  
-		            }
+		            },
+		            {  
+		                label: '<B>Mapa Metalogénico <br> de Colombia</B>',  
+		                data: '',  
+		                children:[ 
+							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},
+							{label:'Descarga PDF', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/MapaMetalogenico2016/'},  
+		                    ]  
+		            },
+		            
 		            
 		        ],  
                     nodeSelect: function(event, ui) { 
@@ -263,13 +288,18 @@ $(function() {
 		        	window.open(ui.data);
 					return false;
 		        	}
-		        	else if(ui.data!="")  {
-		        		var url= document.URL;
-		        		var corte = url.split("/");
-		        		var dominio = corte[0];
-		        		var ruta= dominio +ui.data;
-		        		window.open(ruta);
-						return false;
+		        	
+		        	else if (ui.data.indexOf("atlasGeoquimico") !=-1 ){
+		        		switch (ui.data) {
+		        	    
+		        	    case "/catalog/quicklink/atlasGeoquimico.page":
+		        	    	var urlf2='${pageContext.request.contextPath}'+ui.data;
+		        	    	window.location.replace(urlf2);
+		        	        break;
+
+		        		}
+		        		
+		       
 		        	}
 		        	else
 		        	{
@@ -363,7 +393,7 @@ $(function() {
 		                data: '',  
 		                children:[ 
                             {label:'Descripción', data:'/geoportalsgc/catalog/PDF/SismicidadHistoricadeColombia.pdf'},   
-		                    {label:'Enlace a pagina web',data:'http://sish.sgc.gov.co/visor/visor.html'}  
+		                    {label:'Enlace a pagina web',data:'http://sish.sgc.gov.co/visor/'}  
 		                    ]  
 		            }
 		            

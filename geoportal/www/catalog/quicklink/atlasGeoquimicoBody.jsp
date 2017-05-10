@@ -35,7 +35,7 @@
 	    });
 	                
      $('#tbllocal').puidatatable({
-         caption: 'Mapa de Amenazas por Movimientos En Masa Escala 1:100.000',
+         caption: 'Atlas Geoquímico de Colombia 2016',
          paginator: {
              rows: 10
          },
@@ -46,39 +46,43 @@
      
          ],
          datasource: [
-             {'Nombre':'Mapa AMM','Descripcion': "Amazonas", 'Archivo':'AmazonasZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Antioquia", 'Archivo':'AntioquiaZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Arauca", 'Archivo':'AraucaZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Atlántico", 'Archivo':'AtlanticoZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Bolívar", 'Archivo':'BolivarZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Boyacá", 'Archivo':'BoyacaZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Caldas", 'Archivo':'CaldasZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Caqueta", 'Archivo':'CaquetaZip.zip'},
-             {'Nombre':'Mapa AMM','Descripcion': "Casanare", 'Archivo':'CasanareZip.zip'},
-	     	 {'Nombre':'Mapa AMM','Descripcion': "Cauca", 'Archivo':'CaucaZip.zip'},	     	  
-	     	{'Nombre':'Mapa AMM','Descripcion': "Cesar", 'Archivo':'CesarZip.zip'},
-	     	{'Nombre':'Mapa AMM','Descripcion': "Chocó", 'Archivo':'ChocoZip.zip'},
-	     	{'Nombre':'Mapa AMM','Descripcion': "Córdoba", 'Archivo':'CordobaZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Cundinamarca", 'Archivo':'CundinamarcaZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Guainía", 'Archivo':'GuaniaZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Guaviare", 'Archivo':'GuaviareZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Huila", 'Archivo':'HuilaZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "La Guajira", 'Archivo':'La GuajiraZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Magdalena", 'Archivo':'MagdalenaZip.zip'},
-	     	 {'Nombre':'Mapa AMM','Descripcion': "Meta", 'Archivo':'MetaZip.zip'}, 
-	     	{'Nombre':'Mapa AMM','Descripcion': "Nariño", 'Archivo':'NariñoZip.zip'}, 
-	     	{'Nombre':'Mapa AMM','Descripcion': "Norte Santander", 'Archivo':'Norte santanderZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Putumayo", 'Archivo':'PutumayoZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Quindío", 'Archivo':'QuindioZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Risaralda", 'Archivo':'RisaraldaZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Santander", 'Archivo':'SantanderZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Sucre", 'Archivo':'SucreZip.zip'},
-            {'Nombre':'Mapa AMM','Descripcion': "Tolima", 'Archivo':'TolimaZip.zip'},
-	     	 {'Nombre':'Mapa AMM','Descripcion': "Valle del Cauca",'Archivo':'Valle del caucaZip.zip'},
-	     	{'Nombre':'Mapa AMM','Descripcion': "Vaupés", 'Archivo':'VaupesZip.zip'},
-	     	 {'Nombre':'Mapa AMM','Descripcion': "Vichada", 'Archivo':'VichadaZip.zip'},
-             
-              
+             {'Nombre':'Atlas geoquímico','Descripcion': "Aluminio", 'Archivo':'Al.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Arsénico", 'Archivo':'As.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Oro", 'Archivo':'Au.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Bario", 'Archivo':'Ba.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Berilio", 'Archivo':'Be.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Calcio", 'Archivo':'CaO.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Caldas", 'Archivo':'Cd.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Cadmio", 'Archivo':'Ce.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Cerio", 'Archivo':'Co.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Cobalto", 'Archivo':'Cr.pdf'},	     	  
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Cromo", 'Archivo':'Cs.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Cobre", 'Archivo':'Cu.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Disprosio", 'Archivo':'Dy.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Hierro", 'Archivo':'Fe2O3.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Galio", 'Archivo':'Hg.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Mercurio", 'Archivo':'Ho.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Holmio", 'Archivo':'In.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Indio", 'Archivo':'K2O.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Potasio", 'Archivo':'La.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Lantano", 'Archivo':'Li.pdf'}, 
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Litio", 'Archivo':'Lu.pdf'}, 
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Lutecio", 'Archivo':'MgO.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Magnesio", 'Archivo':'Mn.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Sodio", 'Archivo':'Na2O.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Neodimio", 'Archivo':'Nd.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Níquel", 'Archivo':'Ni.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Fósforo", 'Archivo':'P2O5.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Praseodimio", 'Archivo':'Pr.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Rubidio",'Archivo':'Rb.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Silicio", 'Archivo':'SiO2.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Torio", 'Archivo':'Th.pdf'},  	 
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Titanio", 'Archivo':'TiO2.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Uranio",'Archivo':'U.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Vanadio", 'Archivo':'V.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Zinc", 'Archivo':'Zn.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Zirconio", 'Archivo':'Zr.pdf'},
+                          
          ],
          selectionMode: 'single',
          rowSelect: function(event, data) {
@@ -87,7 +91,7 @@
         		 
    
         	
-        	 if (data.Descripcion == 'Amazonas')
+        	 if (data.Descripcion == 'Aluminio')
     		 {
         		 
         		 $('#dlg').puidialog('show');
@@ -98,7 +102,7 @@
         			    	 if (X==1)
         			    		 {
         			    		    X=X+1
-        			    	 		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amazonas.zip');
+        			    	 		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Al.pdf');
         			    		    
         			    		 }
         			    },
@@ -110,7 +114,7 @@
         			});
         		
     		 }
-        	 else if (data.Descripcion == 'Antioquia')
+        	 else if (data.Descripcion == 'Arsénico')
              {
         		 $('#dlg').puidialog('show');
         		 
@@ -119,7 +123,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Antioquia.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/As.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -130,7 +134,7 @@
         			});
         		
              }
-        	 else if (data.Descripcion == 'Atlántico')
+        	 else if (data.Descripcion == 'Oro')
              {
         		 $('#dlg').puidialog('show');
         		
@@ -139,7 +143,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Atlantico.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Au.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -150,7 +154,7 @@
         			});
         		 
              }       	 
-        	 else if (data.Descripcion == 'Bolívar')
+        	 else if (data.Descripcion == 'Bario')
              {
         		 $('#dlg').puidialog('show');
         		 
@@ -159,7 +163,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Bolivar.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Ba.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -170,7 +174,7 @@
         			});
         		 
              }
-        	 else if (data.Descripcion == 'Boyacá')
+        	 else if (data.Descripcion == 'Berilio')
              {
         		 $('#dlg').puidialog('show');
         		 
@@ -179,7 +183,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Boyaca.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Be.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -190,7 +194,7 @@
         			});
         		
              }
-        	 else if (data.Descripcion == 'Arauca')
+        	 else if (data.Descripcion == 'Calcio')
              {
         		 $('#dlg').puidialog('show');
         		
@@ -199,7 +203,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Arauca.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/CaO.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -210,7 +214,7 @@
         			});
         		 
              }
-        	 else if (data.Descripcion == 'Caldas')
+        	 else if (data.Descripcion == 'Cadmio')
              {
         		 $('#dlg').puidialog('show');
         		 
@@ -219,7 +223,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Caldas.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Cd.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -230,7 +234,7 @@
         			});
         		 
              }
-        	 else if (data.Descripcion == 'Caqueta')
+        	 else if (data.Descripcion == 'Cerio')
              {
         		 $('#dlg').puidialog('show');
         		 
@@ -239,7 +243,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Caqueta.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Ce.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -250,7 +254,7 @@
         			});
         		 
              }
-              else if (data.Descripcion == 'Casanare')
+              else if (data.Descripcion == 'Cobalto')
              {
             	 $('#dlg').puidialog('show');
          		 
@@ -259,7 +263,7 @@
          			    afterHide: function(event) {
          			    	 if (X==1)
          			    		 {
-         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Casanare.zip');
+         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Co.pdf');
          			    		 }
          			    },
          		        minimize:function(event) {
@@ -270,7 +274,7 @@
          			});
         		 
              }
-              else if (data.Descripcion == 'Cauca')
+              else if (data.Descripcion == 'Cromo')
              {
             	  $('#dlg').puidialog('show');
           		 
@@ -279,7 +283,7 @@
           			    afterHide: function(event) {
           			    	 if (X==1)
           			    		 {
-          			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Cauca.zip');
+          			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Cr.pdf');
           			    		 }
           			    },
           		        minimize:function(event) {
@@ -292,7 +296,7 @@
              }
          
          
-              else if (data.Descripcion == 'Cesar')
+              else if (data.Descripcion == 'Cesio')
               {
             	  $('#dlg').puidialog('show');
            		 
@@ -301,7 +305,7 @@
            			    afterHide: function(event) {
            			    	 if (X==1)
            			    		 {
-           			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Cesar.zip');
+           			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Cs.pdf');
            			    		 }
            			    },
            		        minimize:function(event) {
@@ -313,7 +317,7 @@
          		
          		
               }
-              else if (data.Descripcion == 'Chocó')
+              else if (data.Descripcion == 'Cobre')
               {
             	  $('#dlg').puidialog('show');
             		
@@ -322,7 +326,7 @@
             			    afterHide: function(event) {
             			    	 if (X==1)
             			    		 {
-            			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Choco.zip');
+            			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Cu.pdf');
             			    		 }
             			    },
             		        minimize:function(event) {
@@ -333,7 +337,7 @@
             			});
          		 
               }
-              else if (data.Descripcion == 'Córdoba')
+              else if (data.Descripcion == 'Disprosio')
               {
             	  $('#dlg').puidialog('show');
          		
@@ -342,7 +346,7 @@
          			    afterHide: function(event) {
          			    	 if (X==1)
          			    		 {
-         			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Cordoba.zip');
+         			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Dy.pdf');
          			    		 }
          			    },
          		        minimize:function(event) {
@@ -353,7 +357,7 @@
          			});
          		
               }
-         	 else if (data.Descripcion == 'Cundinamarca')
+         	 else if (data.Descripcion == 'Hierro')
               {
          		$('#dlg').puidialog('show');
         		
@@ -362,7 +366,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Cundinamarca.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Fe2O3.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -373,7 +377,7 @@
         			});
          		 
               }
-         	else if (data.Descripcion == 'Guainía')
+         	else if (data.Descripcion == 'Galio')
             {
          		$('#dlg').puidialog('show');
        		 
@@ -382,7 +386,7 @@
        			    afterHide: function(event) {
        			    	 if (X==1)
        			    		 {
-       			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Guainia.zip');
+       			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Ga.pdf');
        			    		 }
        			    },
        		        minimize:function(event) {
@@ -393,7 +397,7 @@
        			});
        		
             }
-         	 else if (data.Descripcion == 'Guaviare')
+         	 else if (data.Descripcion == 'Mercurio')
               {
          		 $('#dlg').puidialog('show');
           		 var X=1
@@ -401,7 +405,7 @@
           			    afterHide: function(event) {
           			    	 if (X==1)
           			    		 {
-          			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Guaviare.zip');
+          			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Hg.pdf');
           			    		 }
           			    },
           		        minimize:function(event) {
@@ -412,7 +416,7 @@
           			});
          		
               }
-         	 else if (data.Descripcion == 'Huila')
+         	 else if (data.Descripcion == 'Holmio')
               {
          		$('#dlg').puidialog('show');
          		 var X=1
@@ -420,7 +424,7 @@
          			    afterHide: function(event) {
          			    	 if (X==1)
          			    		 {
-         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Huila.zip');
+         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Ho.pdf');
          			    		 }
          			    },
          		        minimize:function(event) {
@@ -431,7 +435,7 @@
          			});
          		 
               }
-               else if (data.Descripcion == 'La Guajira')
+               else if (data.Descripcion == 'Indio')
               {
             	 $('#dlg').puidialog('show');
            		 var X=1
@@ -439,7 +443,7 @@
            			    afterHide: function(event) {
            			    	 if (X==1)
            			    		 {
-           			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/LaGuajira.zip');
+           			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/In.pdf');
            			    		 }
            			    },
            		        minimize:function(event) {
@@ -450,7 +454,7 @@
            			});
          		 
               }
-               else if (data.Descripcion == 'Magdalena')
+               else if (data.Descripcion == 'Potasio')
               {
             	   $('#dlg').puidialog('show');
              		 var X=1
@@ -458,7 +462,7 @@
              			    afterHide: function(event) {
              			    	 if (X==1)
              			    		 {
-             			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Magdalena.zip');
+             			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/K2O.pdf');
              			    		 }
              			    },
              		        minimize:function(event) {
@@ -470,7 +474,7 @@
          		 
               }
               
-               else if (data.Descripcion == 'Meta')
+               else if (data.Descripcion == 'Lantano')
                {
             	   $('#dlg').puidialog('show');
            		 var X=1
@@ -478,7 +482,7 @@
            			    afterHide: function(event) {
            			    	 if (X==1)
            			    		 {
-           			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Meta.zip');
+           			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/La.pdf');
            			    		 }
            			    },
            		        minimize:function(event) {
@@ -489,7 +493,7 @@
            			});
           		 
                }
-               else if (data.Descripcion == 'Nariño')
+               else if (data.Descripcion == 'Litio')
                {
             	   $('#dlg').puidialog('show');
              		 var X=1
@@ -497,7 +501,7 @@
              			    afterHide: function(event) {
              			    	 if (X==1)
              			    		 {
-             			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Nariño.zip');
+             			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Li.pdf');
              			    		 }
              			    },
              		        minimize:function(event) {
@@ -508,7 +512,7 @@
              			});
           		 
                }
-          	 else if (data.Descripcion == 'Norte Santander')
+          	 else if (data.Descripcion == 'Lutecio')
                {
           		$('#dlg').puidialog('show');
         		 var X=1
@@ -516,7 +520,7 @@
         			    afterHide: function(event) {
         			    	 if (X==1)
         			    		 {
-        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/NSantander.zip');
+        			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Lu.pdf');
         			    		 }
         			    },
         		        minimize:function(event) {
@@ -528,7 +532,7 @@
      		 
           		 
                }
-          	 else if (data.Descripcion == 'Putumayo')
+          	 else if (data.Descripcion == 'Magnesio')
                {
           		$('#dlg').puidialog('show');
        		 var X=1
@@ -536,7 +540,7 @@
        			    afterHide: function(event) {
        			    	 if (X==1)
        			    		 {
-       			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Putumayo.zip');
+       			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/MgO.pdf');
        			    		 }
        			    },
        		        minimize:function(event) {
@@ -547,7 +551,7 @@
        			});
           		 
                }
-          	else if (data.Descripcion == 'Quindío')
+          	else if (data.Descripcion == 'Maganeso')
             {
           		$('#dlg').puidialog('show');
           		 var X=1
@@ -555,7 +559,7 @@
           			    afterHide: function(event) {
           			    	 if (X==1)
           			    		 {
-          			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Quindio.zip');
+          			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Mn.pdf');
           			    		 }
           			    },
           		        minimize:function(event) {
@@ -566,7 +570,7 @@
           			});
        		 
             }
-          	 else if (data.Descripcion == 'Risaralda')
+          	 else if (data.Descripcion == 'Sodio')
                {
           		$('#dlg').puidialog('show');
          		 var X=1
@@ -574,7 +578,7 @@
          			    afterHide: function(event) {
          			    	 if (X==1)
          			    		 {
-         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Risaralda.zip');
+         			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Na2O.pdf');
          			    		 }
          			    },
          		        minimize:function(event) {
@@ -585,7 +589,7 @@
          			});
           		 
                }
-                else if (data.Descripcion == 'Santander')
+                else if (data.Descripcion == 'Neodimio')
                {
                 	$('#dlg').puidialog('show');
             		 var X=1
@@ -593,7 +597,7 @@
             			    afterHide: function(event) {
             			    	 if (X==1)
             			    		 {
-            			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Santander.zip');
+            			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Nd.pdf');
             			    		 }
             			    },
             		        minimize:function(event) {
@@ -604,7 +608,7 @@
             			});
           		 
                }
-                else if (data.Descripcion == 'Sucre')
+                else if (data.Descripcion == 'Níquel')
                {
                 	$('#dlg').puidialog('show');
            		 var X=1
@@ -612,7 +616,7 @@
            			    afterHide: function(event) {
            			    	 if (X==1)
            			    		 {
-           			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Sucre.zip');
+           			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Ni.pdf');
            			    		 }
            			    },
            		        minimize:function(event) {
@@ -623,7 +627,7 @@
            			});
           		
                }
-                else if (data.Descripcion == 'Tolima')
+                else if (data.Descripcion == 'Fósforo')
                 {
                 	$('#dlg').puidialog('show');
               		 var X=1
@@ -631,7 +635,7 @@
               			    afterHide: function(event) {
               			    	 if (X==1)
               			    		 {
-              			    		window.open(' http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Tolima.zip');
+              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/P2O5.pdf');
               			    		 }
               			    },
               		        minimize:function(event) {
@@ -642,7 +646,7 @@
               			});
            		 
                 }
-                 else if (data.Descripcion == 'Valle del Cauca')
+                 else if (data.Descripcion == 'Praseodimio')
                 {
                 	 $('#dlg').puidialog('show');
               		 var X=1
@@ -650,7 +654,7 @@
               			    afterHide: function(event) {
               			    	 if (X==1)
               			    		 {
-              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/ValleCauca.zip');
+              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Pr.pdf');
               			    		 }
               			    },
               		        minimize:function(event) {
@@ -661,7 +665,7 @@
               			});
            		 
                 }
-                 else if (data.Descripcion == 'Vaupés')
+                 else if (data.Descripcion == 'Silicio')
                  {
                 	 $('#dlg').puidialog('show');
               		 var X=1
@@ -669,7 +673,7 @@
               			    afterHide: function(event) {
               			    	 if (X==1)
               			    		 {
-              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Vaupes.zip');
+              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/SiO2.pdf');
               			    		 }
               			    },
               		        minimize:function(event) {
@@ -682,7 +686,7 @@
                  }
         	 
         	 
-                 else if (data.Descripcion == 'Vichada')
+                 else if (data.Descripcion == 'Torio')
                  {
                 	 $('#dlg').puidialog('show');
               		 var X=1
@@ -690,7 +694,7 @@
               			    afterHide: function(event) {
               			    	 if (X==1)
               			    		 {
-              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Vichada.zip');
+              			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Th.pdf');
               			    		 }
               			    },
               		        minimize:function(event) {
@@ -701,6 +705,104 @@
               			});
             		 
                  }
+        	 
+                 else if (data.Descripcion == 'Titanio')
+                 {
+                  	$('#dlg').puidialog('show');
+             		 var X=1
+             		 $('#dlg').puidialog({
+             			    afterHide: function(event) {
+             			    	 if (X==1)
+             			    		 {
+             			    		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/TiO2.pdf');
+             			    		 }
+             			    },
+             		        minimize:function(event) {
+             		        	 X=X+1
+             		        	 $('#dlg').puidialog('hide');
+             		        	$('#dlg').puidialog('toggleMinimize');
+             		        }
+             			});
+            		
+                 }
+                  else if (data.Descripcion == 'Uranio')
+                  {
+                  	$('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/U.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+             		 
+                  }
+                   else if (data.Descripcion == 'Vanadio')
+                  {
+                  	 $('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/V.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+             		 
+                  }
+                   else if (data.Descripcion == 'Zinc')
+                   {
+                  	 $('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Zn.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+              		 
+                   }
+          	 
+          	 
+                   else if (data.Descripcion == 'Zirconio')
+                   {
+                  	 $('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Zr.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+              		 
+                   }
         	 
         	 
         	       	 
@@ -713,13 +815,9 @@
  </script>
 
 
- <div id="default" style="margin-bottom:20px" title="Archivo integrado nacional de susceptibilidad y amenaza relativa por movimientos en masa">
-    <center>
-    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/Amenaza_Nacional_2016.zip' download>Archivo integrado nacional</a>
-    <br>
-    <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondGenTermLicUso.pdf' download>Términos y condiciones de uso. </a>
-     <a href='http://srvags.sgc.gov.co/Archivos_Geoportal/Amenaza_Movimientos_Masa/CondPropiedIntelectual.pdf' download>Términos de propiedad intelectual</a>
-     
+ <div id="default" style="margin-bottom:20px" title="">
+    
+     Conocimiento geoquímico del territorio nacional al servicio del pais
     </center>
 </div>
 
