@@ -19,16 +19,7 @@
              {'Nombre':'Mapa Geológico', 'Archivo':'MapaGeologicoHidrologia.pdf'},
              {'Nombre':'Sondeos Electricos Verticales 1973', 'Archivo':'SondeosElectricosVerticales1973-1975.pdf'},
              {'Nombre':'Sondeos Electricos Verticales 2016', 'Archivo':'SondeosElectricosVerticales2010-2016.pdf'},
-	     	 
-			 
-				 
-				 
-				 
-				 
-				 
-
-             
-	     	
+     	
          ],
          selectionMode: 'single',
          rowSelect: function(event, data) {
@@ -62,9 +53,60 @@
          },
         
      });
+	 
+	    $('#tblquindio').puidatatable({
+         caption: 'Mapas de Hidrogeología del Departamento del Quindio',
+         paginator: {
+             rows: 10
+         },
+         columns: [
+             {field:'Nombre', headerText: 'Nombre', sortable:true},
+        
+             {field:'Archivo', headerText: 'Archivo', sortable:true},
+     
+         ],
+         datasource: [
+             {'Nombre':'Control Geológico', 'Archivo':'Control_Geologico.pdf'},
+             {'Nombre':'Geofísico', 'Archivo':'Mapa_Geofisico.pdf'},
+             {'Nombre':'Hidrogeológico', 'Archivo':'Mapa_Hidrogeologico.pdf'},
+             {'Nombre':'Hidrogeoquímico', 'Archivo':'Mapa_Hidrogeoquimico.pdf'},
+             {'Nombre':'Hidrogeoquímico (Diagramas de Stiff)', 'Archivo':'Mapa_Hidrogeoquimico_stiff.pdf'},
+             
+     	
+         ],
+         selectionMode: 'single',
+         rowSelect: function(event, data) {
+        	 if (data.Nombre == 'Control Geológico')
+    		 {
+    		 	 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Hidrogeologia/QUINDIO/Control_Geologico.pdf');
+    		 }
+        	 else if (data.Nombre == 'Geofísico')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Hidrogeologia/QUINDIO/Mapa_Geofisico.pdf');
+             }
+        	 else if (data.Nombre == 'Hidrogeológico')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Hidrogeologia/QUINDIO/Mapa_Hidrogeologico.pdf');
+             }
+        	 else if (data.Nombre == 'Hidrogeoquímico')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Hidrogeologia/QUINDIO/Mapa_Hidrogeoquimico.pdf');
+             }
+        	 else if (data.Nombre == 'Hidrogeoquímico (Diagramas de Stiff)')
+             {
+        		 window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Hidrogeologia/QUINDIO/Mapa_Hidrogeoquimico_stiff.pdf');
+             }
+              			  
+        	 
+         },
+        
+     });
  
  }); 
  
  </script>
- 
+ <div id="tblquindio"></div>
+ <br>
  <div id="tbllocal"></div>
+ 
+ 

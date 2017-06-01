@@ -52,23 +52,24 @@
              {'Nombre':'Atlas geoquímico','Descripcion': "Bario", 'Archivo':'Ba.pdf'},
              {'Nombre':'Atlas geoquímico','Descripcion': "Berilio", 'Archivo':'Be.pdf'},
              {'Nombre':'Atlas geoquímico','Descripcion': "Calcio", 'Archivo':'CaO.pdf'},
-             {'Nombre':'Atlas geoquímico','Descripcion': "Caldas", 'Archivo':'Cd.pdf'},
-             {'Nombre':'Atlas geoquímico','Descripcion': "Cadmio", 'Archivo':'Ce.pdf'},
-             {'Nombre':'Atlas geoquímico','Descripcion': "Cerio", 'Archivo':'Co.pdf'},
-	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Cobalto", 'Archivo':'Cr.pdf'},	     	  
-	     	{'Nombre':'Atlas geoquímico','Descripcion': "Cromo", 'Archivo':'Cs.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Cadmio", 'Archivo':'Cd.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Cerio", 'Archivo':'Ce.pdf'},
+             {'Nombre':'Atlas geoquímico','Descripcion': "Cobalto", 'Archivo':'Co.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Cromo", 'Archivo':'Cr.pdf'},	     	  
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Cesio", 'Archivo':'Cs.pdf'},
 	     	{'Nombre':'Atlas geoquímico','Descripcion': "Cobre", 'Archivo':'Cu.pdf'},
 	     	{'Nombre':'Atlas geoquímico','Descripcion': "Disprosio", 'Archivo':'Dy.pdf'},
             {'Nombre':'Atlas geoquímico','Descripcion': "Hierro", 'Archivo':'Fe2O3.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Galio", 'Archivo':'Hg.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Mercurio", 'Archivo':'Ho.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Holmio", 'Archivo':'In.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Indio", 'Archivo':'K2O.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Potasio", 'Archivo':'La.pdf'},
-	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Lantano", 'Archivo':'Li.pdf'}, 
-	     	{'Nombre':'Atlas geoquímico','Descripcion': "Litio", 'Archivo':'Lu.pdf'}, 
-	     	{'Nombre':'Atlas geoquímico','Descripcion': "Lutecio", 'Archivo':'MgO.pdf'},
-            {'Nombre':'Atlas geoquímico','Descripcion': "Magnesio", 'Archivo':'Mn.pdf'},
+			{'Nombre':'Atlas geoquímico','Descripcion': "Galio", 'Archivo':'Ga.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Mercurio", 'Archivo':'Hg.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Holmio", 'Archivo':'Ho.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Indio", 'Archivo':'In.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Potasio", 'Archivo':'K2O.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Lantano", 'Archivo':'La.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Litio", 'Archivo':'Li.pdf'}, 
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Lutecio", 'Archivo':'Lu.pdf'}, 
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Magnesio", 'Archivo':'MgO.pdf'},
+            {'Nombre':'Atlas geoquímico','Descripcion': "Manganeso", 'Archivo':'Mn.pdf'},
             {'Nombre':'Atlas geoquímico','Descripcion': "Sodio", 'Archivo':'Na2O.pdf'},
             {'Nombre':'Atlas geoquímico','Descripcion': "Neodimio", 'Archivo':'Nd.pdf'},
             {'Nombre':'Atlas geoquímico','Descripcion': "Níquel", 'Archivo':'Ni.pdf'},
@@ -82,6 +83,11 @@
 	     	{'Nombre':'Atlas geoquímico','Descripcion': "Vanadio", 'Archivo':'V.pdf'},
 	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Zinc", 'Archivo':'Zn.pdf'},
 	     	{'Nombre':'Atlas geoquímico','Descripcion': "Zirconio", 'Archivo':'Zr.pdf'},
+			
+			{'Nombre':'Atlas geoquímico','Descripcion': "Bismuto",'Archivo':'Bi.pdf'},
+	     	{'Nombre':'Atlas geoquímico','Descripcion': "Escandio", 'Archivo':'Sc.pdf'},
+	     	 {'Nombre':'Atlas geoquímico','Descripcion': "Estroncio", 'Archivo':'Sc.pdf'},
+	     	
                           
          ],
          selectionMode: 'single',
@@ -803,6 +809,65 @@
                 			});
               		 
                    }
+				    else if (data.Descripcion == 'Bismuto')
+                  {
+                  	$('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Bi.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+             		 
+                  }
+                   
+                   else if (data.Descripcion == 'Escandio')
+                   {
+                  	 $('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Sc.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+              		 
+                   }
+          	 
+          	 
+                   else if (data.Descripcion == 'Estroncio')
+                   {
+                  	 $('#dlg').puidialog('show');
+                		 var X=1
+                		 $('#dlg').puidialog({
+                			    afterHide: function(event) {
+                			    	 if (X==1)
+                			    		 {
+                			    		window.open('http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/UNIDOS_ATLAS/Sr.pdf');
+                			    		 }
+                			    },
+                		        minimize:function(event) {
+                		        	 X=X+1
+                		        	 $('#dlg').puidialog('hide');
+                		        	$('#dlg').puidialog('toggleMinimize');
+                		        }
+                			});
+				   }
         	 
         	 
         	       	 

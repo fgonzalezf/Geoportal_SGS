@@ -67,8 +67,10 @@ $(function() {
 	                label: '<B>Hidrogeologia</B>',  
 	                data: '',  
 	                children:[  
-                        {label:'Visor Geográfico',data: ''},  
+                        {label:'Visor Geográfico Guajira',data: 'http://arcg.is/2nMujxV'},  
+						{label:'Visor Geográfico Quindío',data: 'http://sgcolombiano.maps.arcgis.com/apps/MapSeries/index.html?appid=4b1cb9f0af13411cbf46704972267342'},  
                         {label:'Información Para Descarga',data: '/catalog/quicklink/hidrogeologia.page'}, 
+						
 	                    ]  
 	            },
 	            {  
@@ -235,17 +237,18 @@ $(function() {
 		            },
 		            **/
 		            {  
-		                label: '<B>Atlas Geofísico <br> de Colombia</B>',  
+		                label: '<B>Anomalías Geofísicas <br> de Colombia</B>',  
 		                data: '',  
 		                children:[  
-							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
-		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Potencial_Carbonifero_Colombia/'},  
+							{label:'Descripción', data:'http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/Descripciones/RESUMEN_MAGC_2016_GEOPORTAL.pdf'},  
+		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Jsviewer/Mapa_de_Anomalías_Geofisicas_de_Colombia/'},  
 		                    ]  
 		            },
 		            {  
 		                label: '<B>Atlas Geoquímico <br> de Colombia</B>',  
 		                data: '',  
-		                children:[  
+		                children:[ 
+							{label:'Descripción', data:'http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/Descripciones/ATLAS_GEOQUIMICO_DE_COLOMBIA_2016_GEOPORTAL.pdf'}, 						
 							{label:'Descarga de Información', data:'/catalog/quicklink/atlasGeoquimico.page'},    
 		                    ]  
 		            },
@@ -253,7 +256,7 @@ $(function() {
 		                label: '<B>Mapa Carbonífero <br> de Colombia</B>',  
 		                data: '',  
 		                children:[  
-							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
+							{label:'Descripción', data:'http://geoportal.sgc.gov.co/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/Flexviewer/Mapa_Potencial_Carbonifero_Colombia/'},  
 		                    ]  
 		            },
@@ -261,8 +264,8 @@ $(function() {
 		                label: '<B>Mapa Metalogénico <br> de Colombia</B>',  
 		                data: '',  
 		                children:[ 
-							{label:'Descripción', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},
-							{label:'Descarga PDF', data:'/geoportalsgc/catalog/PDF/MapaCarboniferodeColombia.pdf'},  
+							{label:'Descripción', data:'http://srvags.sgc.gov.co/Archivos_Geoportal/Recursos_Minerales/Descripciones/MAPA_METALOGENICO_DE_COLOMBIA_VERSION_2016_GEOPORTAL.pdf'},
+							/*{label:'Descarga PDF', data:'/geoportalsgc/Archivos_Geoportal/Recursos_Minerales/Metalogenico/MMC_2017_may.pdf'}, */ 
 		                    {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/MapaMetalogenico2016/'},  
 		                    ]  
 		            },
@@ -318,8 +321,9 @@ $(function() {
 					    label: '<B>Amenaza Sísmica</B>',  
 					    data: '',  
 					    children:[  
+							 {label:'Nueva evaluación',data: 'http://srvags.sgc.gov.co/JSViewer/AmenazaSismicaNuevaEvaluacion/'},
+					        {label:'Otros Mapas',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/'},  
 							  
-					        {label:'Visor Geográfico',data: 'http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/'},  
 					        ]  
 					},
 		             
@@ -624,16 +628,19 @@ $(function() {
 		        nodes: [  
 		                
 					{  
-    					label: '<B>EPIS</B>',  
-    				    data: 'http://www2.sgc.gov.co/EPIS/Epis2.aspx',  
+    					label: '<B>EPIS</B>', 
+						data: '',
+						/*
+    				    data: 'http://www2.sgc.gov.co/EPIS/Epis2.aspx', 
+                        */						
     							
 					},
 									
-					{  
+					/*{  
 						label: '<B>Visor Geográfico EPIS</B>',  
 						data: 'http://srvagspru.sgc.gov.co/JSViewer/EPIS_V2/',
 						
-					},
+					},*/
 					
 		           
 					
@@ -847,9 +854,3 @@ $(function() {
 <br>
 <br>
 <br>
-
-
-
-     
-    
-     
