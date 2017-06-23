@@ -879,14 +879,613 @@
  
  </script>
 
-
+<!--  
  <div id="default" style="margin-bottom:20px" title="">
     
      Conocimiento geoquímico del territorio nacional al servicio del pais
     </center>
 </div>
 
+
 <div id="tbllocal"></div>
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+      <meta charset='utf-8'>
+		<style>html {
+  background: #787878;
+  /* Old browsers */
+  background: radial-gradient(ellipse at center, #454545 0%, #787878 100%);
+  background-size: cover;
+  height: 100%;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body {
+  width: 1000%;
+  width: 100vw;
+  heigt: 100%;
+  
+  color: black; }
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000; }
+
+.elements {
+  font-size: 10px; }
+  @media screen and (min-width: 400px) {
+    .elements {
+      font-size: calc(10px + 8 * ((100vw - 600px) / 1320)); } }
+  @media screen and (min-width: 1920px) {
+    .elements {
+      font-size: 18px; } }
+
+.element {
+  display: none; }
+
+.key {
+  display: none; }
+
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+    text-align: center;
+    height: 4vmin;
+    justify-content: space-around; }
+  .f-block .row {
+    justify-content: flex-end; }
+  .element {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex: 2vw 0 0;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 1px;
+    text-decoration: none; }
+  .description {
+    display: none; }
+  .description:target {
+    display: block; }
+  .key {
+    display: block;
+    padding: 0;
+    width: 60%;
+    max-width: 650px;
+    list-style-type: none;
+    color: #fff;
+    line-height: 1.8;
+    font-weight: normal; }
+  .key li {
+    display: inline-block;
+    margin: 0 .2rem;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer; }
+  .key li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 16px;
+    height: 16px; } }
+
+.description {
+  padding: 1em;
+  margin: 2em 0;
+  text-overflow: ellipsis; }
+  .description h2 {
+    margin: 0; }
+  .description a {
+    color: #1d2441;
+    text-decoration: none; }
+  .description a:visited {
+    color: #3C4C88; }
+  .description a:hover, .description a:focus {
+    color: #3C4C88;
+    text-decoration: underline; }
+  .description .moz-link {
+    position: relative;
+    padding-left: 24px; }
+  .description .moz-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: url("moz.png");
+    transform: translate(0, -50%);
+    width: 16px;
+    height: 16px; }
+
+.element.group-base {
+  background-color: #E115DA; }
+  .element.group-base:hover {
+    background-color: #F4A9F1; }
+
+.description.group-base {
+  background-color: rgba(225, 170, 173, 0.5); }
+  .description.group-base:hover {
+    background-color: rgba(212, 132, 137, 0.8); }
+
+.key li.group-base:before {
+  background-color: #E115DA; }
+
+.hover-group-base .element {
+  opacity: .3; }
+
+.hover-group-base .element.group-base {
+  opacity: 1; }
+
+.element.group-metadata {
+  background-color: #ACAEAB; }
+  .element.group-metadata:hover {
+    background-color: #FFFFFF; }
+
+.description.group-metadata {
+  background-color: rgba(225, 180, 170, 0.5); }
+  .description.group-metadata:hover {
+    background-color: rgba(212, 147, 132, 0.8); }
+
+.key li.group-metadata:before {
+  background-color: #ACAEAB; }
+
+.hover-group-metadata .element {
+  opacity: .3; }
+
+.hover-group-metadata .element.group-metadata {
+  opacity: 1; }
+
+.element.group-sectioning {
+  background-color: #d4a784; }
+  .element.group-sectioning:hover {
+    background-color: #e1c2aa; }
+
+.description.group-sectioning {
+  background-color: rgba(225, 194, 170, 0.5); }
+  .description.group-sectioning:hover {
+    background-color: rgba(212, 167, 132, 0.8); }
+
+.key li.group-sectioning:before {
+  background-color: #d4a784; }
+
+.hover-group-sectioning .element {
+  opacity: .5; }
+
+.hover-group-sectioning .element.group-sectioning {
+  opacity: 1; }
+
+.element.group-text-content {
+  background-color: #d4bb84; }
+  .element.group-text-content:hover {
+    background-color: #e1d0aa; }
+
+.description.group-text-content {
+  background-color: rgba(225, 208, 170, 0.5); }
+  .description.group-text-content:hover {
+    background-color: rgba(212, 187, 132, 0.8); }
+
+.key li.group-text-content:before {
+  background-color: #d4bb84; }
+
+.hover-group-text-content .element {
+  opacity: .5; }
+
+.hover-group-text-content .element.group-text-content {
+  opacity: 1; }
+
+.element.group-text-semantics {
+  background-color: #d4cf84; }
+  .element.group-text-semantics:hover {
+    background-color: #e1deaa; }
+
+.description.group-text-semantics {
+  background-color: rgba(225, 222, 170, 0.5); }
+  .description.group-text-semantics:hover {
+    background-color: rgba(212, 207, 132, 0.8); }
+
+.key li.group-text-semantics:before {
+  background-color: #d4cf84; }
+
+.hover-group-text-semantics .element {
+  opacity: .5; }
+
+.hover-group-text-semantics .element.group-text-semantics {
+  opacity: 1; }
+
+.element.group-media {
+  background-color: #c5d484; }
+  .element.group-media:hover {
+    background-color: #d7e1aa; }
+
+.description.group-media {
+  background-color: rgba(215, 225, 170, 0.5); }
+  .description.group-media:hover {
+    background-color: rgba(197, 212, 132, 0.8); }
+
+.key li.group-media:before {
+  background-color: #c5d484; }
+
+.hover-group-media .element {
+  opacity: .5; }
+
+.hover-group-media .element.group-media {
+  opacity: 1; }
+
+.element.group-embedded {
+  background-color: #b1d484; }
+  .element.group-embedded:hover {
+    background-color: #c9e1aa; }
+
+.description.group-embedded {
+  background-color: rgba(201, 225, 170, 0.5); }
+  .description.group-embedded:hover {
+    background-color: rgba(177, 212, 132, 0.8); }
+
+.key li.group-embedded:before {
+  background-color: #b1d484; }
+
+.hover-group-embedded .element {
+  opacity: .5; }
+
+.hover-group-embedded .element.group-embedded {
+  opacity: 1; }
+
+.element.group-script {
+  background-color: #9dd484; }
+  .element.group-script:hover {
+    background-color: #bbe1aa; }
+
+.description.group-script {
+  background-color: rgba(187, 225, 170, 0.5); }
+  .description.group-script:hover {
+    background-color: rgba(157, 212, 132, 0.8); }
+
+.key li.group-script:before {
+  background-color: #9dd484; }
+
+.hover-group-script .element {
+  opacity: .5; }
+
+.hover-group-script .element.group-script {
+  opacity: 1; }
+
+.element.group-edits {
+  background-color: #89d484; }
+  .element.group-edits:hover {
+    background-color: #ade1aa; }
+
+.description.group-edits {
+  background-color: rgba(173, 225, 170, 0.5); }
+  .description.group-edits:hover {
+    background-color: rgba(137, 212, 132, 0.8); }
+
+.key li.group-edits:before {
+  background-color: #89d484; }
+
+.hover-group-edits .element {
+  opacity: .5; }
+
+.hover-group-edits .element.group-edits {
+  opacity: 1; }
+
+.element.group-table {
+  background-color: #84d493; }
+  .element.group-table:hover {
+    background-color: #aae1b4; }
+
+.description.group-table {
+  background-color: rgba(170, 225, 180, 0.5); }
+  .description.group-table:hover {
+    background-color: rgba(132, 212, 147, 0.8); }
+
+.key li.group-table:before {
+  background-color: #84d493; }
+
+.hover-group-table .element {
+  opacity: .5; }
+
+.hover-group-table .element.group-table {
+  opacity: 1; }
+
+.element.group-forms {
+  background-color: #84d4a7; }
+  .element.group-forms:hover {
+    background-color: #aae1c2; }
+
+.description.group-forms {
+  background-color: rgba(170, 225, 194, 0.5); }
+  .description.group-forms:hover {
+    background-color: rgba(132, 212, 167, 0.8); }
+
+.key li.group-forms:before {
+  background-color: #84d4a7; }
+
+.hover-group-forms .element {
+  opacity: .5; }
+
+.hover-group-forms .element.group-forms {
+  opacity: 1; }
+
+.element.group-interactive {
+  background-color: #84d4bb; }
+  .element.group-interactive:hover {
+    background-color: #aae1d0; }
+
+.description.group-interactive {
+  background-color: rgba(170, 225, 208, 0.5); }
+  .description.group-interactive:hover {
+    background-color: rgba(132, 212, 187, 0.8); }
+
+.key li.group-interactive:before {
+  background-color: #84d4bb; }
+
+.hover-group-interactive .element {
+  opacity: .5; }
+
+.hover-group-interactive .element.group-interactive {
+  opacity: 1; }
+
+.element.group-web-components {
+  background-color: #84d4cf; }
+  .element.group-web-components:hover {
+    background-color: #aae1de; }
+
+.description.group-web-components {
+  background-color: rgba(170, 225, 222, 0.5); }
+  .description.group-web-components:hover {
+    background-color: rgba(132, 212, 207, 0.8); }
+
+.key li.group-web-components:before {
+  background-color: #84d4cf; }
+
+.hover-group-web-components .element {
+  opacity: .5; }
+
+.hover-group-web-components .element.group-web-components {
+  opacity: 1; }
+</style>
+	</head>
+	<body>
+		<main>
+			<h1>Atlas Geoquímico de Colombia Versión 2016</h1>
+			<div class="elements">
+	<div class="row">
+		<a href="#html" class="element group-metadata"><span>H</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+       <div class="element empty-element"></div>
+       <div class="element empty-element"></div>
+		<a href="#output" class="element group-metadata"><span>He</span></a>
+	</div>
+	<div class="row">
+		<a href="#base" class="element group-base"><span>Li</span></a>
+		<a href="#h1-h6" class="element group-base"><span>Be</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+		<a href="#strong" class="element group-metadata"><span>B</span></a>
+		<a href="#area" class="element group-metadata"><span>C</span></a>
+		<a href="#param" class="element group-metadata"><span>N</span></a>
+		<a href="#caption" class="element group-metadata"><span>O</span></a>
+		<a href="#th" class="element group-metadata"><span>F</span></a>
+		<a href="#input" class="element group-metadata"><span>Ne</span></a>
+
+	</div>
+	<div class="row">
+		<a href="#head" class="element group-base"><span>Na</span></a>
+		<a href="#hgroup" class="element group-base"><span>Mg</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+      <div class="element empty-element"></div>
+		<a href="#audio" class="element group-base"><span>Al</span></a>
+		<a href="#source" class="element group-base"><span>Si</span></a>
+		<a href="#col" class="element group-base"><span>P</span></a>
+		<a href="#thead" class="element group-base"><span>S</span></a>
+		<a href="#keygen" class="element group-metadata"><span>Ci</span></a>
+		<a href="#select" class="element group-metadata"><span>Ar</span></a>
+	</div>
+	<div class="row">
+		<a href="#style" class="element group-base"><span>K</span></a>
+		<a href="#nav" class="element group-base"><span>Ca</span></a>
+		<a href="#figcaption" class="element group-base"><span>Sc</span></a>
+		<a href="#p" class="element group-base"><span>Ti</span></a>
+		<a href="#bdi" class="element group-base"><span>V</span></a>
+		<a href="#data" class="element group-base"><span>Cr</span></a>
+		<a href="#mark" class="element group-base"><span>Mn</span></a>
+		<a href="#ruby" class="element group-base"><span>Fe</span></a>
+		<a href="#sup" class="element group-base"><span>Co</span></a>
+		<a href="#map" class="element group-base"><span>Ni</span></a>
+		<a href="#canvas" class="element group-base"><span>Cu</span></a>
+		<a href="#colgroup" class="element group-base"><span>Zn</span></a>
+		<a href="#tr" class="element group-base"><span>Ga</span></a>
+		<a href="#label" class="element group-metadata"><span>Ge</span></a>
+		<a href="#details" class="element group-base"><span>As</span></a>
+        <a href="#tr" class="element group-base"><span>Se</span></a>
+        <a href="#label" class="element group-metadata"><span>Br</span></a>
+        <a href="#details" class="element group-metadata"><span>Kr</span></a>
+	</div>
+	<div class="row">
+		<a href="#title" class="element group-base"><span>Rb</span></a>
+		<a href="#section" class="element group-base"><span>Sr</span></a>
+		<a href="#figure" class="element group-base"><span>Y</span></a>
+		<a href="#pre" class="element group-base"><span>Zr</span></a>
+		<a href="#bdo" class="element group-base"><span>Nb</span></a>
+		<a href="#dfn" class="element group-base"><span>Mo</span></a>
+		<a href="#q" class="element group-metadata"><span>Tc</span></a>
+		<a href="#s" class="element group-metadata"><span>Ru</span></a>
+		<a href="#time" class="element group-metadata"><span>Rh</span></a>
+		<a href="#track" class="element group-metadata"><span>Pd</span></a>
+		<a href="#noscript" class="element group-base"><span>Ag</span></a>
+		<a href="#table" class="element group-base"><span>Cd</span></a>
+		<a href="#button" class="element group-base"><span>In</span></a>
+		<a href="#legend" class="element group-metadata"><span>Sn</span></a>
+		<a href="#dialog" class="element group-base"><span>Sb</span></a>
+        <a href="#button" class="element group-metadata"><span>Te</span></a>
+        <a href="#legend" class="element group-metadata"><span>I</span></a>
+        <a href="#dialog" class="element group-metadata"><span>Xe</span></a>
+	</div>
+	<div class="row">
+		<a href="#address" class="element group-base"><span>Cs</span></a>
+		<a href="#dd" class="element group-base"><span>Ba</span></a>
+		<a href="#hr" class="element group-metadata"><span>57-71</span></a>
+		<a href="#ul" class="element group-metadata"><span>Hf</span></a>
+		<a href="#br" class="element group-metadata"><span>Ta</span></a>
+		<a href="#em" class="element group-metadata"><span>W</span></a>
+		<a href="#rp" class="element group-metadata"><span>Re</span></a>
+		<a href="#samp" class="element group-metadata"><span>Os</span></a>
+		<a href="#u" class="element group-metadata"><span>Ir</span></a>
+		<a href="#video" class="element group-base"><span>Pt</span></a>
+		<a href="#script" class="element group-base"><span>Au</span></a>
+		<a href="#tbody" class="element group-base"><span>Hg</span></a>
+		<a href="#datalist" class="element group-metadata"><span>Tl</span></a>
+		<a href="#meter" class="element group-base"><span>Pb</span></a>
+		<a href="#menu" class="element group-base"><span>Bi</span></a>
+        <a href="#datalist" class="element group-metadata"><span>Po</span></a>
+        <a href="#meter" class="element group-metadata"><span>At</span></a>
+        <a href="#menu" class="element group-metadata"><span>Rn</span></a>
+	</div>
+	<div class="row">
+		<a href="#article" class="element group-metadata"><span>Fr</span></a>
+		<a href="#div" class="element group-metadata"><span>Ra</span></a>
+		<a href="#li" class="element group-metadata"><span>89-103</span></a>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+        <div class="element empty-element"></div>
+
+	</div>
+	<div class="row">
+      <div class="element empty-element"></div>
+      <div class="element empty-element"></div>
+      <div class="element empty-element"></div>
+		<a href="#b" class="element group-base"><span>la</span></a>
+		<a href="#code" class="element group-base"><span>ce</span></a>
+		<a href="#kbd" class="element group-base"><span>Pr</span></a>
+		<a href="#rtc" class="element group-base"><span>Nd</span></a>
+		<a href="#span" class="element group-metadata"><span>Pm</span></a>
+		<a href="#wbr" class="element group-base"><span>Sm</span></a>
+		<a href="#object" class="element group-base"><span>Eu</span></a>
+		<a href="#ins" class="element group-base"><span>Gb</span></a>
+		<a href="#tfoot" class="element group-base"><span>Tb</span></a>
+		<a href="#form" class="element group-base"><span>Dy</span></a>
+		<a href="#option" class="element group-base"><span>Ho</span></a>
+		<a href="#summary" class="element group-base"><span>Er</span></a>
+        <a href="#form" class="element group-base"><span>Tm</span></a>
+        <a href="#option" class="element group-base"><span>Yb</span></a>
+        <a href="#summary" class="element group-base"><span>Lu</span></a>
+	</div>
+	<div class="row">
+      <div class="element empty-element"></div>
+      <div class="element empty-element"></div>
+      <div class="element empty-element"></div>
+      <a href="#b" class="element group-metadata"><span>Ac</span></a>
+      <a href="#code" class="element group-base"><span>Th</span></a>
+      <a href="#kbd" class="element group-metadata"><span>Pa</span></a>
+      <a href="#rtc" class="element group-base"><span>U</span></a>
+      <a href="#span" class="element group-metadata"><span>Np</span></a>
+      <a href="#wbr" class="element group-metadata"><span>Pu</span></a>
+      <a href="#object" class="element group-metadata"><span>Am</span></a>
+      <a href="#ins" class="element group-metadata"><span>Cm</span></a>
+      <a href="#tfoot" class="element group-metadata"><span>Bk</span></a>
+      <a href="#form" class="element group-metadata"><span>Cf</span></a>
+      <a href="#option" class="element group-metadata"><span>Es</span></a>
+      <a href="#summary" class="element group-metadata"><span>Fm</span></a>
+      <a href="#form" class="element group-metadata"><span>Md</span></a>
+      <a href="#option" class="element group-metadata"><span>No</span></a>
+      <a href="#summary" class="element group-metadata"><span>Lr</span></a>
+	</div>
+</div>
+          <!--
+<div class="f-block elements">
+	<div class="row">
+	  <a href="#content" class="element group-web-components"><span>content</span></a>
+	  <a href="#element" class="element group-web-components"><span>element</span></a>
+	  <a href="#shadow" class="element group-web-components"><span>shadow</span></a>
+	  <a href="#template" class="element group-web-components"><span>template</span></a>
+	</div>
+</div>
+-->
+<ul class="key">
+	<li class="group-base">Elementos Incluidos en el Atlas Geoquímico Colombiano. Versión 2016</li>
+	<li class="group-metadata">Elementos No Incluidos en el Atlas Geoquímico Colombiano. Versión 2016</li>
+
+</ul>
+<div class="descriptions">
+
+</div>
+
+		</main>
+		<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		if (document.location.hostname === "madebymike.com.au") {
+		  ga('create', 'UA-42027047-2', 'auto');
+		  ga('send', 'pageview');
+		}
+		Array.prototype.forEach.call(document.querySelectorAll('.key li'), function(li){
+			li.addEventListener('mouseenter', function(){
+				document.body.classList.add('hover-'+this.className);
+			});
+			li.addEventListener('mouseleave', function(){
+				document.body.classList.remove('hover-'+this.className);
+			});
+		});
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
 
 <div id="dlg" title="TÉRMINOS GENERALES Y CONDICIONES"> 
 <B>Los siguientes términos aplican de manera general a todos los productos/ información/datos que un usuario adquiere del SERVICIO GEOLÓGICO COLOMBIANO</B>
